@@ -1,0 +1,120 @@
+/* MEAF.css*/ 
+
+header {
+    background-color: #333;
+    color: #fff;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #000;
+  display: flex;
+  max-width: 100%;
+  padding: 10px;
+  margin-top: 0;
+  height: 100vh;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    font-family: 'Martel', serif, bold;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+.nav-item {
+    margin: 0 15px;
+    position: relative;
+    color: black;
+    top: 160px;
+    padding: 10px;
+    left: 10%;
+    font-size: 20px;
+}
+
+.nav-item:hover { 
+    background-color: lightgray;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.subtabs {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 10px;
+}
+
+.nav-item .subtabs {
+    padding: 10px;
+}
+.subtabs li {
+    list-style-type: none;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.nav-item:hover .subtabs {
+    display: block;
+}
+
+.nav-item .subtabs::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: black;
+    left: 0;
+    bottom: 0;
+}
+
+.nav-item:hover::after {
+    height: 4px;
+}
+
+.border-line {
+    width: 100%;
+    height: 2px;
+    background-color: purple;
+    margin-bottom: 0;
+    position: relative;
+    top: -230px;
+}
+
+.logo {
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 0;
+    display: block;
+    max-width: 100%;
+    top: -165px;
+    right: 0.5%;
+    transform: scale(0.6);
+}

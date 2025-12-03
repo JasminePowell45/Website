@@ -1,0 +1,371 @@
+/* --------------- Global Reset ---------- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: rgb(74, 74, 74);
+    color: #222;
+    line-height: 1.5;
+
+}
+
+.html, body {
+    margin:0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+header{
+border-bottom: 1px solid  #e69d0b;
+width: 100vw;
+}
+
+.header-top {
+    background-color: rgb(74, 74, 74);
+    padding: 15px 0; /*space around logo */
+    text-align: center; /*centers logo*/
+}
+/* ------------ Navigation Bar ------------*/ 
+nav {
+    width: 100vw;
+    max-width: 100vw;
+    background-color: #000;
+    border-bottom: 1px solid rgb(74, 74, 74);
+    box-shadow: 0 2px 4px #e69d0b;
+    padding: 10px;
+}
+
+/*navigation drop down */
+
+.nav-item.has-dropdown {
+    position: relative;
+}
+
+.nav-item.has-dropdown .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px #000;
+    text-align: center;
+}
+
+.nav-item.has-dropdown .dropdown li a {
+    display: block;
+    padding: 10px 15px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item.has-dropdown:hover .dropdown {
+    display:block;
+}
+
+.nav-item.has-dropdown .dropdown li a:hover {
+    background:  #e69d0b;
+    color: white;
+}
+
+
+/* top level nav */
+.nav-list {
+    list-style: none;
+    align-items: center;
+    max-width: 100%;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    width: 175px; /* makes the logo smaller*/
+    height: auto;
+}
+
+/* Main nav links */
+.nav-item > a {
+    text-decoration: none;
+    color: #f0ead6;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    padding: 8px 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.nav-item > a:hover {
+    color: #0A5f8a;
+}
+
+
+
+/*---section for first picture-----*/
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*----Section 1 mission statement----*/
+
+.mission {
+    width: 100%;
+    height: 400px;
+    padding : 0;
+}
+
+.mission-box {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 30px;
+}
+
+.mission-box img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mission-box .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.mission-box .container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 3rem;
+    transform: translateY(-50px);
+}
+
+.mission-box .container h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin: 5px auto 0 auto;
+    background: rgba(195, 137, 13, 0.862);
+    border-radius: 2px;
+}
+.mission-box .container p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    transform: translateY(-70px);
+}
+.container {
+    color: white;
+}
+
+/* team members */
+.team {
+
+    max-width: 700vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+.team-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    flex: 0 0 200px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    max-width: 1000px;
+    flex: 1;
+}
+
+.member {
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    background-color:  rgb(74, 74, 74);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    color: white;
+}
+
+/* events*/
+
+.event-section {
+    background-color: rgb(74, 74, 74);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.event-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    gap: 20px;
+}
+
+.event-text {
+    flex: 0 0 55%;
+    text-align: center;
+    color: white;
+}
+
+.event-text h2::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    margin: 5px auto 0 auto;
+    background: rgba(195, 137, 13, 0.862);
+    border-radius: 2px;
+}
+
+.event-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.event-text p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.event-image {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    object-fit: cover;
+    transform: scale(0.7);
+    margin-bottom: 0;
+}
+@media (max-width: 900px) {
+    .event-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .event-text, .event-image {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+/*----sign up section-----*/
+
+.signup-section {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+.signup-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.5)), url('/Users/jazzpowell/Downloads/AEC11CDD-7882-4FB9-8A33-373796952B2F.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.signup-content {
+    text-align: center;
+    z-index: 2;
+    max-width: 600px;
+    color: white;
+}
+
+.signup-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.signup-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.singup-form input[type="email"] {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.signup-form button {
+    padding: 12px 15px;
+    font-size: 1rem;
+    background-color: #e69d0b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #cf8d09;
+}
+
+@media (max-width: 600px) {
+    .signup-content h2 {
+        font-size: 1.5rem;
+    }
+    .signup-content p {
+        font-size: 0.95rem;
+    }
+    .signup-form input[type="email"],
+    .signupform button {
+        width: 100%;
+    }
+}
