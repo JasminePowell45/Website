@@ -468,3 +468,79 @@ nav {
         text-align: center;
     }
 }
+
+@media (max-width: 768px) {
+    body, header {
+        font-size: 90%;
+        text-align: center;
+        padding: 0 10px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-item, .dropdowns {
+        width: 100%
+        margin: 5px 0;
+        text-align: center;
+    }
+    .logo {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto 10px auto;
+    }
+    .mission {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .team-carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .person-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .person-card img {
+        max-width: 100%;
+        height: auto;
+    }
+    .person-card-overlay {
+        font-size: 90%
+    }
+    .carousel-btn.next {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .events-carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .events-carousel .section-title {
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .events-carousel .slide {
+        width: 100%;
+        flex-directions: column;
+        align-items: center;
+    }
+    .events-carousel .track-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
