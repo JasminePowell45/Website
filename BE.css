@@ -444,3 +444,59 @@ a {
     background-color: #e0b800;
     transform: scale(2);
 }
+
+@media (max-width: 768) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .nav-item.has-dropdown, .dropdown {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+    .logo {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto 10px;
+    }
+    .hero-container, .eventinfo, .overview, .ending {
+        text-align: center;
+        padding: 10px;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .event-gallery, .row, .winner-row, .award-winners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .event, .winner-card {
+        width: 90%;
+        margin: 5px auto;
+    }
+    .info, .voting {
+        text-align: center
+        font-size: 90%;
+        }
+    .nominate-button, .voting-button {
+            width: 80%;
+            margin: 10px auto;
+            display: block;
+        }
+    img, video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    }
+            
