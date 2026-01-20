@@ -281,14 +281,11 @@ nav {
 }
 /*----EXPO FLYER-----*/
 * {
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;
     font-family: 'Arial', sans-serif;
 }
 
 .expo-promo {
-    padding: 60px 20px;
+    padding: 100px 20px;
     background-color: #f5f5f5;
 }
 
@@ -299,25 +296,25 @@ nav {
 
 .expo-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     color: #1a1a1a;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 /* Two-column layout*/
 .expo-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 .expo-info {
-    flex: 1 1 400px;
+    flex: 1;
 }
 .expo-details {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 18px;
+    color: white;
 }
 .register-button {
     display: inline-block;
@@ -334,14 +331,14 @@ nav {
 }
 
 .expo-image {
-    flex: 1 1 400px;
+    flex: 1;
     text-align: center;
 }
 .expo-image img {
     width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 /* responsiveness*/
 @media (max-width: 768px) {
@@ -350,7 +347,7 @@ nav {
         text-align: center;
     }
     .expo-info {
-        margin-top: 20px;
+        margin-top: 40px;
     }
 }
 /*----sign up section-----*/
