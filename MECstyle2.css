@@ -322,7 +322,7 @@ nav {
 .register-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #ff6b00;
+    background-color: #e69d0b;
     color: white;
     font-weight: bold;
     border-radius: 8px;
@@ -330,7 +330,7 @@ nav {
     transistion: background 0.3s;
 }
 .register-button:hover {
-    background-color: #e65c00;
+    background-color: #e69d0b;
 }
 
 .expo-image {
