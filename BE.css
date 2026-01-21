@@ -247,9 +247,8 @@ a {
 }
 /* GRID LAYOUT*/
 .events-grid {
-    grid-template-columns: repeat(4, minimax(0, 1fr)) !important;
     gap: 2rem;
-    max-width: 1200px !important;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
