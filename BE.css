@@ -237,7 +237,6 @@ a {
 .current-events {
     padding: 4rem 2rem;
     background-color: #ffffff;
-    text-align: center;
 }
 
 .current-events .section-title {
@@ -261,7 +260,6 @@ a {
     text-align: center;
     flex-direction: column;
     align-items: center;
-    display: flex;
 }
 
 /* FLYER IMAGE + HOVER*/
