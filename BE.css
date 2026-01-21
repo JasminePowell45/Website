@@ -247,18 +247,16 @@ a {
 }
 /* GRID LAYOUT*/
 .events-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: grid !important;
+    grid-template-columns: repeat(4, minimax(0, 1fr)) !important;
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 1200px !important;
     margin: 0 auto;
-    align-items: start;
 }
 
 /*EVENT CARD*/
 .event-card {
     text-align: center;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -269,7 +267,6 @@ a {
     margin-bottom: 1rem;
 }
 .event-image {
-    width: 100%;
     max-width: 250px;
     aspect-ratio: 4 / 5%;
     object-fit: cover;
@@ -283,7 +280,6 @@ a {
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 4px;
-    display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
