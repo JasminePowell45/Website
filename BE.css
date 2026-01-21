@@ -233,26 +233,53 @@ a {
 }
 
 /*-----current events----*/
+
+.current-events {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.current-events .section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 3rem;
+}
+/* GRID LAYOUT */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/*EVENT CARD*/
+.event-card {
+    text-align: center;
+}
+
+/* FLYER IMAGE + HOVER*/
 .flyer-link {
     position: relative;
     display: block;
     margin-bottom: 1rem;
-    cursor: pointer;
     text-decoration: none;
 }
-
 .event-image {
     width: 100%;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 4 / 5%;
     object-fit: cover;
-    border-radius: 4px;
     display: block;
+    border-radius: 4px;
 }
 
+/* HOVER OVERLAY */
 .flyer-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -261,71 +288,56 @@ a {
     transistion: opacity 0.3s ease;
 }
 
+/* OVERLAY TEXT */
 .flyer-overlay span {
     color: #e69d0b;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 0.5px;
     border: 2px solid #e69d0b;
     padding: 0.75rem 1.25rem;
 }
 
+/* HOVER EFFECT*/
 .flyer-link:hover .flyer-overlay {
     opacity: 1;
 }
-
-.current-events {
-    padding: 4rem 2rem;
-    background-color: #ffffff;
+.flyer-link:hover .event-image {
+    transform: scale(1.03);
+    transistion: transform 0.3s ease;
 }
 
-.section-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.section-header h2 {
-    font-size: 2rem;
-    color: #000;
-    margin-bottom: 0.5rem;
-}
-
-
-.events-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.event-card {
-    background-color: #ffffff;
-    border: 1px solid #eee;
-    padding: 2rem;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
+/* EVENT TEXT*/
 .event-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
     color: #000;
 }
+.event-date {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0;
+}
 
-
-
-@media (max-width: 768px) {
+/* MEDIA */
+@media (max-width: 1024px) {
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .events-grid {
+        grid-template-column: 1fr;
+    }
     .flyer-overlay {
         opacity: 1;
         background: rgba(0, 0, 0, 0.4);
     }
 }
-    
-    
-/*-----gallery of events----*/
+
+
+/*---gallery of events----*/
 
 .event-gallery {
     width:100%;
