@@ -246,13 +246,14 @@ a {
     color: #000;
     margin-bottom: 3rem;
 }
-/* GRID LAYOUT align-items: start;*/
+/* GRID LAYOUT*/
 .events-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: start;
 }
 
 /*EVENT CARD*/
