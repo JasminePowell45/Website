@@ -232,6 +232,78 @@ a {
     color: rgb(205, 131, 65);  /*Links in gold to match the theme*/
 }
 
+/*-----current events----*/
+.current-events {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.gold-divider {
+    width: 60px;
+    height: 3px;
+    background-color: #e69d0b;
+    margin: 0 auto;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.event-card {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    padding: 2rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.event-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.event-btn {
+    align-self: flex-direction;
+    padding: 0.75rem 1.5rem;
+    background-color: #000;
+    color: #e69d0b;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #000;
+    transistion: all 0.3s ease;
+}
+
+.event-btn:hover {
+    background-color: #e69d0b;
+    color: #000;
+    border-color: #e69d0b;
+}
+
+@media (max-width: 768px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+}
+    
+    
 /*-----gallery of events----*/
 
 .event-gallery {
