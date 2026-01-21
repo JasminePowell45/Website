@@ -270,7 +270,6 @@ a {
     max-width: 250px;
     aspect-ratio: 4 / 5%;
     object-fit: cover;
-    display: block;
     border-radius: 4px;
 }
 
@@ -281,6 +280,7 @@ a {
     background: rgba(0, 0, 0, 0.6);
     border-radius: 4px;
     align-items: center;
+    display: flex;
     justify-content: center;
     opacity: 0;
     transistion: opacity 0.3s ease;
