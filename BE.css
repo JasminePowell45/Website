@@ -237,16 +237,18 @@ a {
 .current-events {
     padding: 4rem 2rem;
     background-color: #ffffff;
+    text-align: center;
 }
 
 .current-events .section-title {
-    text-align: center;
     font-size: 2rem;
     color: #000;
     margin-bottom: 3rem;
 }
 /* GRID LAYOUT*/
 .events-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -255,29 +257,31 @@ a {
 /*EVENT CARD*/
 .event-card {
     text-align: center;
-    align-items: center;
 }
 
 /* FLYER IMAGE + HOVER*/
 .flyer-link {
     position: relative;
+    display: block;
     margin-bottom: 1rem;
 }
 .event-image {
+    width: 100%;
     max-width: 250px;
-    aspect-ratio: 4 / 5%;
+    aspect-ratio: 4 / 5;
     object-fit: cover;
     border-radius: 4px;
+    display: block;
 }
 
 /* HOVER OVERLAY */
 .flyer-overlay {
     position: absolute;
     inset: 0;
+    display: flex;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 4px;
     align-items: center;
-    display: flex;
     justify-content: center;
     opacity: 0;
     transistion: opacity 0.3s ease;
@@ -288,9 +292,8 @@ a {
     color: #e69d0b;
     font-size: 0.95rem;
     font-weight: 600;
-    letter-spacing: 0.5px;
     border: 2px solid #e69d0b;
-    padding: 0.75rem 1.25rem;
+    padding: 0.5rem 1rem;
 }
 
 /* HOVER EFFECT*/
@@ -305,14 +308,14 @@ a {
 /* EVENT TEXT*/
 .event-card h3 {
     font-size: 1.1rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem 0 0.25rem;
     color: #000;
 }
 .event-date {
     font-size: 0.85rem;
     font-weight: 600;
     color: #ffffff;
-    margin-bottom: 0;
+    margin-bottom: 0.5;
 }
 
 /* MEDIA */
