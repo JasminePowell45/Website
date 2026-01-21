@@ -239,6 +239,9 @@ a {
     background-color: #ffffff;
     text-align: center;
 }
+* {
+    outline: 2px solid red;
+}
 
 .current-events .section-title {
     font-size: 2rem;
