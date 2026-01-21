@@ -247,7 +247,6 @@ a {
 }
 /* GRID LAYOUT*/
 .events-grid {
-    display: grid !important;
     grid-template-columns: repeat(4, minimax(0, 1fr)) !important;
     gap: 2rem;
     max-width: 1200px !important;
@@ -263,7 +262,6 @@ a {
 /* FLYER IMAGE + HOVER*/
 .flyer-link {
     position: relative;
-    display: block;
     margin-bottom: 1rem;
 }
 .event-image {
