@@ -235,7 +235,7 @@ a {
 /*-----current events----*/
 .flyers-row {
     text-align: center;
-    white-space: nowrap;
+  /*  white-space: nowrap;*/
 }
 
 
@@ -252,7 +252,8 @@ a {
     width: 250px;
     height: 350px;
     box-sizing: border-box;
-    margin: 0 1 rem;
+    margin: 0 3 rem;
+    overflow: hidden;
     text-align: center;
     position: relative;
 }
@@ -263,7 +264,7 @@ a {
     height: 100%;
     display: block;
     border-radius: 4px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 
