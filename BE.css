@@ -233,13 +233,11 @@ a {
 }
 
 /*-----current events----*/
-.events-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+.flyers-row {
+    text-align: center;
+    white-space: nowrap;
 }
+
 
 
 
@@ -249,8 +247,12 @@ a {
 
 /*EVENT CARD*/
 .event-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    margin: 0 1 rem;
     text-align: center;
-    flex: 0 0 250px;
+    position: relative;
 }
 
 /* FLYER IMAGE + HOVER*/
@@ -279,6 +281,7 @@ a {
     position: relative;
     display: block;
 }
+
 /* OVERLAY TEXT */
 
 /* HOVER EFFECT*/
@@ -286,6 +289,12 @@ a {
     opacity: 1;
 }
 
+.flyer-overlay span {
+    color: #c9a24d;
+    border: 2px solid #c9a24d;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+}
 
 /* EVENT TEXT*/
 
@@ -293,17 +302,15 @@ a {
 
 /* MEDIA */
 @media (max-width: 1024px) {
-    .events-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .event-card {
+        width: 45%;
+        margin: 1rem 2%;
     }
 }
 @media (max-width: 600px) {
-    .events-grid {
-        grid-template-column: 1fr;
-    }
-    .flyer-overlay {
-        opacity: 1;
-        background: rgba(0, 0, 0, 0.4);
+    .event-card {
+       width: 100%;
+        margin: 1rem 0;
     }
 }
 
