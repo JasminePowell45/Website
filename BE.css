@@ -235,7 +235,7 @@ a {
 /*-----current events----*/
 .flyers-row {
     text-align: center;
-    white-space: nowrap;
+    font-size: 0;
 }
 
 
