@@ -250,7 +250,7 @@ a {
     display: inline-block;
     vertical-align: top;
     width: 250px;
-    max-width: 250px;
+    height: 350px;
     box-sizing: border-box;
     margin: 0 1 rem;
     text-align: center;
@@ -260,8 +260,7 @@ a {
 /* FLYER IMAGE + HOVER*/
 .event-image {
     width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
+    height: 100%;
     display: block;
     border-radius: 4px;
     object-fit: contain;
@@ -291,6 +290,7 @@ a {
 /* HOVER EFFECT*/
 .flyer-link:hover .flyer-overlay {
     opacity: 1;
+    cursor: pointer;
 }
 
 .flyer-overlay span {
