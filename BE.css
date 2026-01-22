@@ -237,7 +237,7 @@ a {
     background-color: rgba(195, 137, 13, 0.862);
     padding: 2rem 2rem 2rem;
     box-sizing: border-box;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .section-title {
@@ -251,6 +251,7 @@ a {
     text-align: center;
     font-size: 0;
     margin-bottom: 4rem;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* GRID LAYOUT*/
@@ -329,16 +330,16 @@ a {
 
 
 /* MEDIA */
-@media (max-width: 1024px) {
-    .event-card {
-        width: 45%;
-        margin: 1rem 2%;
+@media (hover: none) {
+    .flyer-overlay {
+        opacity: 1;
+        background: rgba(0,0,0,0.5);
     }
 }
 @media (max-width: 600px) {
-    .event-card {
-       width: 100%;
-        margin: 1rem 0;
+    .event-card h3, 
+    .event-card .event-date, {
+       font-size: 0.95;
     }
 }
 
