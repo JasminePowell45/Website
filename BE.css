@@ -235,7 +235,7 @@ a {
 /*-----current events----*/
 .current-events {
     background-color: #e0b800;
-    padding: 4rem 2rem 6rem;
+    padding: 2rem 2rem 2rem;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -281,6 +281,10 @@ a {
 /* HOVER OVERLAY */
 .flyer-overlay {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     inset: 0;
     display: flex;
     background: rgba(0, 0, 0, 0.6);
@@ -293,7 +297,6 @@ a {
 .flyer-link {
     display: block;
     position: relative;
-    /* overflow: hidden;*/
     width: 100%;
     height: 350px;
 }
