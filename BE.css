@@ -234,7 +234,7 @@ a {
 
 /*-----current events----*/
 .current-events {
-    background-color: #e0b800;
+    background-color: rgba(195, 137, 13, 0.862);
     padding: 2rem 2rem 2rem;
     box-sizing: border-box;
     overflow: hidden;
