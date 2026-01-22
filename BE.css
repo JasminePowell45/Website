@@ -270,6 +270,13 @@ a {
     margin-bottom: 1rem;
 }
 
+.event-image {
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 4 / 5;
+    display: block;
+    border-radius: 4px
+}
 
 /* HOVER OVERLAY */
 .flyer-overlay {
