@@ -269,14 +269,7 @@ a {
     display: block;
     margin-bottom: 1rem;
 }
-.event-image {
-    width: 100%;
-    max-width: 250px;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    border-radius: 4px;
-    display: block;
-}
+
 
 /* HOVER OVERLAY */
 .flyer-overlay {
