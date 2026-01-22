@@ -237,6 +237,7 @@ a {
     background-color: #e0b800;
     padding: 4rem 2rem 6rem;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .section-title {
@@ -281,7 +282,7 @@ a {
 .flyer-overlay {
     position: absolute;
     inset: 0;
-    /* display: flex;*/
+    display: flex;
     background: rgba(0, 0, 0, 0.6);
     align-items: center;
     justify-content: center;
@@ -292,7 +293,7 @@ a {
 .flyer-link {
     display: block;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden;*/
     width: 100%;
     height: 350px;
 }
