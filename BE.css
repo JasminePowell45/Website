@@ -236,11 +236,6 @@ a {
 .flyers-row {
     text-align: center;
     font-size: 0;
-    margin: 2rem auto;
-    padding: 2rem;
-    max-width: 1200px;
-    box-sizing: border-box;
-    
 }
 
 
@@ -257,8 +252,10 @@ a {
     width: 250px;
     height: 350px;
     box-sizing: border-box;
-    margin: 0 2rem;
+    text-align: center;
+    margin: 2rem;
     position: relative;
+    padding: 0;
 }
 
 /* FLYER IMAGE + HOVER*/
@@ -266,7 +263,6 @@ a {
     width: 100% !important;
     height: 100%;
     display: block;
-    border-radius: 4px;
     object-fit: cover;
 }
 
@@ -294,7 +290,6 @@ a {
 /* HOVER EFFECT*/
 .flyer-link:hover .flyer-overlay {
     opacity: 1;
-    cursor: pointer;
 }
 
 .flyer-overlay span {
