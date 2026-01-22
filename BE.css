@@ -252,7 +252,9 @@ a {
     width: 250px;
     box-sizing: border-box;
     text-align: center;
-    margin: 2rem;
+    margin: 0 2rem;
+    font-size: initial;
+    position: relative;
 }
 
 /* FLYER IMAGE + HOVER*/
@@ -270,7 +272,6 @@ a {
     inset: 0;
     display: flex;
     background: rgba(0, 0, 0, 0.6);
-    border-radius: 4px;
     align-items: center;
     justify-content: center;
     opacity: 0;
@@ -278,17 +279,15 @@ a {
 }
 
 .flyer-link {
-    position: relative;
     display: block;
+    position: relative;
     width: 100%;
     height: 350px;
-    overflow: hidden;
-    border-radius: 4px;
 }
 
 .event-card img {
     width: 100%;
-    height: 100%;
+    height: 350px;
     object-fit: cover;
     display: block;
 }
