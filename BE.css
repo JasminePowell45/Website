@@ -250,6 +250,8 @@ a {
     display: inline-block;
     vertical-align: top;
     width: 250px;
+    max-width: 250px;
+    box-sizing: border-box;
     margin: 0 1 rem;
     text-align: center;
     position: relative;
@@ -257,10 +259,12 @@ a {
 
 /* FLYER IMAGE + HOVER*/
 .event-image {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
     display: block;
     border-radius: 4px;
+    object-fit: contain;
 }
 
 
