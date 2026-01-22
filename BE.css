@@ -250,9 +250,8 @@ a {
 .events-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
     gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 /*EVENT CARD*/
@@ -269,10 +268,9 @@ a {
 
 .event-image {
     width: 100%;
-    max-width: 250px;
-    aspect-ratio: 4 / 5;
+    height: auto;
     display: block;
-    border-radius: 4px
+    border-radius: 4px;
 }
 
 /* HOVER OVERLAY */
