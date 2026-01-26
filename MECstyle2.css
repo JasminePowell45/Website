@@ -111,7 +111,7 @@ nav {
 
 /*---section for first picture-----*/
 .image {
-    max-width: 1200px;
+    width: 100vw;
     height: auto;
     display: block;
 }
