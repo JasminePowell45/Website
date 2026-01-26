@@ -112,6 +112,10 @@ nav {
 /*---section for first picture-----*/
 .image {
     width: 100vw;
+}
+
+.image img {
+    width: 100%;
     height: auto;
     display: block;
 }
