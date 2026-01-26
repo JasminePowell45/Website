@@ -123,6 +123,12 @@ nav {
     align-items: center;
 }
 
+.dropdown-toggle::after {
+    content: "▼";
+    font-size: 0.8rem;
+    color: #f0ead6;
+}
+
 @media (max-width: 1024px) {
     .nav-item.has-dropdown:hover .dropdown {
         display: none;
