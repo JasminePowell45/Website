@@ -108,7 +108,37 @@ nav {
 .nav-item > a:hover {
     color: #0A5f8a;
 }
+/* arrow css */
+.dropdown-toggle {
+    background: none;
+    border: none;
+    color: f0ead6;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 6px;
+}
 
+.nav-item.has-dropdowm {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .nav-item.has-dropdown:hover .dropdown {
+        display: none;
+    }
+    .nav-item.open .dropdown {
+        display: block;
+        position: static;
+        transform: none;
+        box-shadow: none;
+        background: #000;
+    }
+
+    .nav-item.open .dropdowm a {
+        color: #f0ead6;
+    }
+}
 .logo {
     text-align: center;
     margin: 0 auto;
