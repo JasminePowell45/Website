@@ -119,6 +119,18 @@ nav {
     height: 600px;
     object-fit: cover;
 }
+
+@media (max-width: 1024px) {
+    .image {
+        max-height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .image {
+        max-height: 40vh;
+    }
+}
 /*----Section 1 mission statement----*/
 
 .mission {
