@@ -124,9 +124,60 @@ nav {
 
 .dropdown-toggle::after {
     content: "▼";
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #f0ead6;
+    margin-left: 6px;
 }
+
+/* SOCIAL MEDIA  + top bar*/
+.top-bar {
+    background: #000;
+    border-bottom: 1px solid #e69d0b;
+    font-size: 0.85rem;
+}
+
+.top-bar-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tagline {
+    color: #f0ead6;
+    letter-spacing: 0.5px;
+}
+
+.top-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-icons a {
+    color: #f0ead6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.social-icons a:hover {
+    color: #e69d0b;
+}
+
+.cta-button {
+    border: 1px solid #e69d0b;
+    color: #e69d0b;
+    padding: 6px 14px;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    background: #e69d0b;
+    color: #000;
+}
+
 
 /*---section for first picture-----*/
 .image {
