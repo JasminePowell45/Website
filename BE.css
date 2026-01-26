@@ -113,6 +113,7 @@ nav {
     background: none;
     border: none;
     color: f0ead6;
+    left: -30px;
     font-size: 0.8rem;
     cursor: pointer;
     padding: 6px;
