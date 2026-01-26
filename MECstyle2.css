@@ -107,7 +107,26 @@ nav {
     color: #0A5f8a;
 }
 
+/* Arrow */
+.dropdown-toggle {
+    background: none;
+    border: none;
+    color: f0ead6;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 6px;
+}
 
+.nav-item.has-dropdowm {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-toggle::after {
+    content: "▼";
+    font-size: 0.8rem;
+    color: #f0ead6;
+}
 
 /*---section for first picture-----*/
 .image {
