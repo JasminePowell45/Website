@@ -116,8 +116,8 @@ nav {
 
 .image img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 300px;
+    object-fit: cover;
 }
 /*----Section 1 mission statement----*/
 
