@@ -124,19 +124,18 @@ nav {
 /* VIDEO */
 .hero-container {
     position: relative;
-    width: 70vw;
+    width: 100vw;
     height: 80vh;
     overflow: hidden;
-    margin: 0 auto;
     margin-bottom: 200px;
     background-color: black;
     
 }
 
 .hero-container video {
-    object-position: center center;
-    inset: 0;
+    object-position: center;
     width: 100%;
+    display: block;
     height: 100%;
     object-fit: contain;
 }
