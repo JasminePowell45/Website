@@ -153,7 +153,7 @@ nav {
     }
 }
 
-/*event-information */
+/*event-information 
 .eventinfo {
     position:relative;
     margin-top: -6vw;
@@ -166,7 +166,7 @@ nav {
     font-size: 3em;
     font-weight: bold;
     color: black;
-    /*text-shadow: 2px 2px 5px rgb(205, 131, 65);*/
+    /*text-shadow: 2px 2px 5px rgb(205, 131, 65);
     text-align: center;
     margin: 20px 0;
     font-family: 'Montserrat', sans-serif;
