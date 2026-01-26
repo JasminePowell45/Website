@@ -149,7 +149,7 @@ nav {
 
 @media (max-width: 768px) {
     .hero-container {
-        height: 40-50vh;
+        height: 45vh;
         margin-bottom: 3vh;
     }
 }
