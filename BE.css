@@ -128,7 +128,7 @@ nav {
     height: 80vh;
     overflow: hidden;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .hero-container video {
@@ -253,7 +253,6 @@ a {
     -webkit-overflow-scrolling: touch;
 }
 
-/* GRID LAYOUT*/
 
 
 
