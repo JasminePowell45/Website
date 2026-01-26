@@ -121,16 +121,16 @@ nav {
     transform: scale(0.9);
 }
 
-/*video*/
+/* VIDEO */
 .hero-container {
     position: relative;
     width: 70vw;
-    height: 50vh;
+    height: 80vh;
     overflow: hidden;
 }
 
 .hero-container video {
-    position: absolute;
+    object-position: center center;
     inset: 0;
     width: 100%;
     height: 100%;
