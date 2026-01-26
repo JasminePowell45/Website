@@ -121,14 +121,14 @@ nav {
 }
 
 @media (max-width: 1024px) {
-    .image {
-        max-height: 60vh;
+    .image img {
+        height: 400px;
     }
 }
 
 @media (max-width: 768px) {
-    .image {
-        max-height: 40vh;
+    .image img {
+        max-height: 250px;
     }
 }
 /*----Section 1 mission statement----*/
