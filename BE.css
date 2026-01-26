@@ -139,6 +139,20 @@ nav {
     object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+    .hero-container; {
+    height: 60vh;
+    margin-bottom: 4vh
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        height: 40-50vh;
+        margin-bottom: 3vh;
+    }
+}
+
 /*event-information */
 .eventinfo {
     position:relative;
