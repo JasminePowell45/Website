@@ -29,6 +29,8 @@ width: 100vw;
     background: #000;
     position: relative;
     z-index: 50;
+    border-bottom: 1px solid  #e69d0b;
+    width: 100vw;
 }
 
 .site-header .header-top {
@@ -37,6 +39,9 @@ width: 100vw;
     align-items: center;
     padding: 8px 16px;
     border-bottom: 1px solid #e69d0b;
+    background-color: rgb(74, 74, 74);
+    padding: 15px 0; /*space around logo*/ 
+    text-align: center; /*centers logo
 }
 .site-header .header-tagline {
     color: #f0ead6;
