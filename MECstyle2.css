@@ -40,8 +40,8 @@ width: 100vw;
     padding: 8px 16px;
     border-bottom: 1px solid #e69d0b;
     background-color: rgb(74, 74, 74);
-    padding: 15px 0; /*space around logo*/ 
-    text-align: center; /*centers logo
+    padding: 15px 0; /*space around logo*/
+    text-align: center; /*centers logo*/
 }
 .site-header .header-tagline {
     color: #f0ead6;
