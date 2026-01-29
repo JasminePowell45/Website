@@ -112,8 +112,10 @@ width: 100vw;
 }
 
 .header-logo{
-    width: 175px; /* makes the logo smaller*/
-    height: auto;
+    align-items: center
+}
+.header-logo img {
+    max-width: 180px;
 }
 
 /* ------------ Navigation Bar ------------*/
