@@ -120,7 +120,7 @@ width: 100vw;
 
 /* ------------ Navigation Bar ------------*/
 .header-nav {
-    max-width: 1000vw;
+    max-width: 1500vw;
     background-color: #000;
     border-bottom: 1px solid rgb(74, 74, 74);
     box-shadow: 0 2px 4px #e69d0b;
@@ -182,7 +182,7 @@ width: 100vw;
 
 
 
-/* Main nav links 
+/* Main nav links */
 .nav-item > a {
     color: #f0ead6;
     font-weight: 700;
