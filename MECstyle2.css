@@ -14,16 +14,6 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
-/*header{
-border-bottom: 1px solid  #e69d0b;
-width: 100vw;
-}
-
-.header-top {
-    background-color: rgb(74, 74, 74);
-    padding: 15px 0; /*space around logo 
-    text-align: center; /*centers logo
-}*/
 
 .site-header {
     background: grey;
@@ -65,7 +55,7 @@ width: 100vw;
 
 .header-socials a {
     color: #e69d0b;
-    margin-left: 12px;
+    margin-left: 20px;
     font-size: 0.85rem;
     transistion: opacity 0.2s ease;
 }
