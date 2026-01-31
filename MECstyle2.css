@@ -51,6 +51,11 @@ width: 100vw;
     font-weight: 600;
     letter-spacing: 0.05rem;
 }
+.header-top span,
+.header-top .tagline {
+    color: #e69d0b !important;
+}
+
 .header-socials {
     position: absolute;
     right: 16px;
@@ -81,7 +86,7 @@ width: 100vw;
     padding: 0;
     width: 100vw;
 }
-.header-nav-item > a {
+.site-header .nav-item > a {
     color: #f0ead6;
     text-decoration: none;
     font-weight: 600;
@@ -127,10 +132,11 @@ width: 100vw;
 }
 
 .header-logo{
-    align-items: center
+    text-aign: center;
 }
 .header-logo img {
     max-width: 180px;
+    display: inline-block;
 }
 
 /* ------------ Navigation Bar ------------*/
