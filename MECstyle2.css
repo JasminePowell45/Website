@@ -200,6 +200,7 @@ width: 100vw;
     padding: 8px 12px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .nav-item > a:hover {
