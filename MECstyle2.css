@@ -41,6 +41,7 @@ body {
     border-bottom: 1px solid #e69d0b;
     border-top: 1px solid #e69d0b;
     background-color: #000;
+    z-index: 10;
 }
 .header-top .tagline {
     color: #e69d0b;
@@ -90,6 +91,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     padding: 8px 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 .site-header .header-nav-item > a:hover {
     color: white;
