@@ -134,11 +134,16 @@ body {
 }
 
 .header-logo{
-    text-aign: center;
+    text-align: center;
+    width: 100%;
+    display: block;
+    position: relative;
+    
 }
 .header-logo img {
     max-width: 180px;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
 }
 
 /* ------------ Navigation Bar ------------*/
