@@ -27,6 +27,7 @@ body {
     width: 100%;
     padding: 10px 16px;
     line-height: 1.2;
+    font-size:0.9rem;
     box-sizing: border-box;
 }
 
@@ -69,7 +70,7 @@ body {
     padding: 12px 16px;
 }
 
-.header-nav-list {
+.site-header .nav-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,7 +136,8 @@ body {
 .header-nav {
     max-width: 1500vw;
     background-color: #000;
-    border-bottom: 1px solid 3e69d0b; /*rgb(74, 74, 74)*/
+    border-top: 1px solid #e69d0b;
+    border-bottom: 1px solid #e69d0b; /*rgb(74, 74, 74)*/
     box-shadow: 0 2px 4px #e69d0b;
     position: absolute;
     z-index: 10;
