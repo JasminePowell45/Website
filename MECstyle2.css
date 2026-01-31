@@ -14,6 +14,8 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
+.header-top { }
+.header-nav { }
 
 .site-header {
     background: grey;
