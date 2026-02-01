@@ -374,7 +374,7 @@ body {
 .flyers-row {
     gap: 10px;
     font-size: 0;
-    flex-wrap: wrap;
+   /* flex-wrap: wrap;*/
     text-align: center;
     font-size: 0;
     margin-bottom: 4rem;
@@ -389,7 +389,7 @@ body {
     max-width: 900px;
     box-sizing: border-box;
     text-align: center;
-    margin-righht: 10px;
+    margin: 0 auto;
     font-size: initial;
     position: relative;
 }
