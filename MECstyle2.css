@@ -432,14 +432,14 @@ body {
     justify-content: center;
     opacity: 0;
     transistion: opacity 0.3s ease;
-}
+}*/
 
 .flyer-link {
     display: block;
     position: relative;
     width: 100%;
     height: 350px;
-} */
+} 
 
 .event-card img {
     width: 100%;
