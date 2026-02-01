@@ -356,6 +356,116 @@ body {
     color: white;
 }
 
+/*-----current events----*/
+.current-events {
+    background-color: rgba(195, 137, 13, 0.862);
+    padding: 2rem 2rem 2rem;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+} 
+
+
+.flyers-row {
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 4rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+/*EVENT CARD*/
+.event-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 2rem;
+    font-size: initial;
+    position: relative;
+}
+
+/* FLYER IMAGE + HOVER*/
+.event-image {
+    width: 100% !important;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* HOVER OVERLAY */
+.flyer-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    display: flex;
+    background: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transistion: opacity 0.3s ease;
+}
+
+.flyer-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.event-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+/* OVERLAY TEXT */
+
+/* HOVER EFFECT*/
+.flyer-link:hover .flyer-overlay {
+    opacity: 1;
+}
+
+.flyer-overlay span {
+    color: #c9a24d;
+    border: 2px solid #c9a24d;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+}
+
+/* EVENT TEXT*/
+
+
+
+/* MEDIA */
+@media (hover: none) {
+    .flyer-overlay {
+        opacity: 1;
+        background: rgba(0,0,0,0.5);
+    }
+}
+@media (max-width: 600px) {
+    .event-card h3, 
+    .event-card .event-date, {
+       font-size: 0.95;
+    }
+}
+
 /* events*/
 
 .event-section {
