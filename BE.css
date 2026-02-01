@@ -226,8 +226,9 @@ nav {
 
 /*-----GREETINGS----*/
  .container {
-    width: 75%;
-    height: 85%;
+    width: 400px;
+    height: 300px;
+    display: block;
     margin: 0 auto;
     margin-top: -10vw;
     align-items: center;
