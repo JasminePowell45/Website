@@ -46,7 +46,7 @@ body {
 .header-top .tagline {
     color: #e69d0b;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.05rem;
     line-height: 1;
     font-family: 'Montserrat', sans-serif;
@@ -208,7 +208,6 @@ body {
     font-size: 1.2rem;
     transition: color 0.3s ease;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
     cursor: pointer;
 }
 
