@@ -361,7 +361,6 @@ body {
     background-color: rgba(195, 137, 13, 0.862);
     padding: 2rem 2rem 2rem;
     box-sizing: border-box;
-    display: flex;
     /*overflow: hidden;*/
 }
 
@@ -401,7 +400,7 @@ body {
     object-fit: cover;
 }
 
-/* disclaimer*/
+/* disclaimer
 .events-cta {
     margin-top: 40px;
     text-align: center;
@@ -417,7 +416,7 @@ body {
 
 .events-cta::before {
     content: "↗ ";
-}
+}*/
 
 
 /* HOVER OVERLAY */
