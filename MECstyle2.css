@@ -372,8 +372,8 @@ body {
 
 
 .flyers-row {
-    display: flex;
     gap: 10px;
+    font-size: 0;
     flex-wrap: wrap;
     text-align: center;
     font-size: 0;
@@ -384,11 +384,12 @@ body {
 
 /*EVENT CARD*/
 .event-card {
+    display: inline-block;
     vertical-align: top;
     max-width: 900px;
     box-sizing: border-box;
     text-align: center;
-    margin: 0 auto;
+    margin-right: 10px
     font-size: initial;
     position: relative;
 }
