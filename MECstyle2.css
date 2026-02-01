@@ -372,9 +372,6 @@ body {
 
 
 .flyers-row {
-    gap: 10px;
-    font-size: 0;
-   /* flex-wrap: wrap;*/
     text-align: center;
     font-size: 0;
     margin-bottom: 4rem;
