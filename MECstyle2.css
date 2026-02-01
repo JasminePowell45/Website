@@ -399,6 +399,44 @@ body {
     object-fit: cover;
 }
 
+/*Circle disclaimer*/
+.event-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+
+    background color: #000;
+    color: #fff;
+
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+.event-card:hover .event-badge {
+    background-color: #e69d0b;
+    color: #000;
+    opacity: 1;
+}
+
+@media (hover: none) {
+    .event-badge {
+        opacity: 1;
+    }
+}
+
 
 /* HOVER OVERLAY */
 .flyer-overlay {
