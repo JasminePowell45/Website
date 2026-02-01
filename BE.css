@@ -226,8 +226,8 @@ nav {
 
 /*-----GREETINGS----*/
  .container {
-    width: 70%;
-    height: 70%;
+    width: 75%;
+    height: 85%;
     margin: 0 auto;
     margin-top: -10vw;
     align-items: center;
@@ -248,7 +248,7 @@ nav {
 }
 
 .overview .description {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .description p {
