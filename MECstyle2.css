@@ -389,6 +389,7 @@ body {
     margin: 0 auto;
     font-size: initial;
     position: relative;
+    gap: 10px;
 }
 
 /* FLYER IMAGE + HOVER*/
