@@ -389,7 +389,7 @@ body {
     max-width: 900px;
     box-sizing: border-box;
     text-align: center;
-    margin-right: 10px
+    margin: 0 auto;
     font-size: initial;
     position: relative;
 }
