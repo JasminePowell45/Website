@@ -251,6 +251,7 @@ nav {
 
 .overview .description {
     margin-bottom: 20px;
+    display: inline-block;
 }
 
 .description p {
