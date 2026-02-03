@@ -228,7 +228,7 @@ nav {
  .container {
     width: 1000px;
     height: 900px;
-    display: flex;
+    display: inline-block;
     margin: 0 auto;
     margin-top: -10vw;
     align-items: center;
