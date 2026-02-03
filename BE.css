@@ -226,8 +226,8 @@ nav {
 
 /*-----GREETINGS----*/
  .container {
-    width: 1000px;
-    height: 900px;
+    width: 70%;
+    height: 80%;
     display: inline-block;
     margin: 0 auto;
     margin-top: -10vw;
