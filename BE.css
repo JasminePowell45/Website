@@ -239,6 +239,7 @@ nav {
  }
 .overview {
     padding: 20px 20px;
+    display: inline-block;
 }
 
 .begin h3 {
