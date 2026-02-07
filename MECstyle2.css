@@ -242,6 +242,8 @@ body {
 /* MENU-TOGGLE HAMBURGER BURTTON (HIDDEN ON DESKTOP*/
 .menu-toggle {
     display: none;
+    flex: 1;
+    text-align: right;
     background: black;
     color: #e69d0b;
     border: 1px solid #e69d0b;
