@@ -271,7 +271,7 @@ body {
     
     /*hide the nav by default*/
     .header-nav .nav-list {
-        display: none;
+        display: none !important;
     }
     /* when menu is open*/
     .header-nav .nav-list.active {
