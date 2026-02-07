@@ -249,6 +249,9 @@ body {
     .header-nav {
         padding: 8px 12px;
     }
+    .heade-nav .nav-list {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch
     .nav-list {
         display: flex;
         flex-wrap: nowrap;
