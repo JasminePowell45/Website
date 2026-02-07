@@ -253,8 +253,11 @@ body {
         display: block;
         margin-left: auto;
         border-radius: 4px;
+        position: relative;
         min-width: 44px;
         min-height: 44px;
+        z-index: 1100;
+        pointer-events: auto;
     }
     .header-top {
         display: flex;
@@ -274,6 +277,10 @@ body {
     /*hide the nav by default*/
     .header-nav .nav-list {
         display: none;
+    }
+    /* when menu is open*/
+    .header-nav .nav-list.active {
+        display: flex;
         flex-direction: column;
         background: black;
         border: 1px solid #e69d0b;
@@ -281,10 +288,6 @@ body {
         right: 0;
         width: 100%;
         position: absolute;
-    }
-    /* when menu is open*/
-    .header-nav .nav-list.active {
-        display: flex;
     }
     .header-nav .nav-item {
         text-align: center;
