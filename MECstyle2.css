@@ -264,10 +264,10 @@ body {
         justify-content: center;
         text-align: center;
     }
-    
-    .header-top {
-        padding: 8px 12px;
+    .header-nav {
+        display: none;
     }
+    
     
     /*hide the nav by default*/
     .header-nav .nav-list {
