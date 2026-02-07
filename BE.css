@@ -158,7 +158,6 @@ nav {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
-        margin-left: auto;
         border-radius: 4px;
         position: relative;
         min-width: 44px;
@@ -181,16 +180,16 @@ nav {
         width: 100%;
         position: absolute;
     }
-    .nav .nav-item {
+    .nav-item {
         text-align: center;
     }
-    .nav .nav-item > a {
+    .nav-item > a {
         padding: 12px;
         display: block;
         color: #f0ead5;
         font-size: 1rem;
     }
-    .nav .nav-item > a:hover {
+    .nav-item > a:hover {
         color: #e69d0b;
     }
     .dropdown {
