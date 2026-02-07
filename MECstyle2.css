@@ -268,11 +268,6 @@ body {
     .header-top {
         padding: 8px 12px;
     }
-    .header-nav {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
     
     /*hide the nav by default*/
     .header-nav .nav-list {
