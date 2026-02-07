@@ -248,6 +248,7 @@ body {
     z-index: 1001;
     position: absolute;
     top: 100%;
+    margin-top: -40px;
     cursor: pointer;
 }
 /* MEDIA FOR PHONES/TABLETS*/
