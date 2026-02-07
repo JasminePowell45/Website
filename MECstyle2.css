@@ -153,9 +153,10 @@ body {
     border-top: 1px solid #e69d0b;
     border-bottom: 1px solid #e69d0b; /*rgb(74, 74, 74)*/
     box-shadow: 0 2px 4px #e69d0b;
-    position: absolute;
+    position: relative;
     z-index: 10;
     width: 100vw;
+    
 }
 
 .nav-item.has-dropdown {
@@ -250,6 +251,10 @@ body {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
+        margin-left: auto;
+        border-radius: 4px;
+        min-width: 44px;
+        min-height: 44px;
     }
     .header-top {
         display: flex;
@@ -260,14 +265,22 @@ body {
     .header-top {
         padding: 8px 12px;
     }
+    .header-nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
     /*hide the nav by default*/
     .header-nav .nav-list {
         display: none;
         flex-direction: column;
         background: black;
         border: 1px solid #e69d0b;
-        margin-top: 10px;
-        padding: 10px 0;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        position: absolute;
     }
     /* when menu is open*/
     .header-nav .nav-list.active {
@@ -284,6 +297,12 @@ body {
     }
     .header-nav .nav-item > a:hover {
         color: #e69d0b;
+    }
+    .dropdown {
+        display: none;
+    }
+    .drowpdown.active {
+        display: block;
     }
 }
   /* need to add  .header-socials a {
