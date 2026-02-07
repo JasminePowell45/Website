@@ -156,7 +156,6 @@ body {
     position: relative;
     z-index: 10;
     width: 100vw;
-    
 }
 
 .nav-item.has-dropdown {
@@ -245,6 +244,7 @@ body {
     border: 1px solid #e69d0b;
     font-size: 1.8rem;
     padding: 6px 12px;
+    z-index: 1000;
     cursor: pointer;
 }
 /* MEDIA FOR PHONES/TABLETS*/
