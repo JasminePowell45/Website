@@ -236,37 +236,61 @@ body {
     color: #f0ead6;
     margin-left: 6px;
 }
-
+/* MENU-TOGGLE HAMBURGER BURTTON (HIDDEN ON DESKTOP*/
+.menu-toggle {
+    display: none;
+    background: black;
+    color: #e69d0b;
+    border: 1px solid #e69d0b;
+    font-size: 1.8rem;
+    padding: 6px 12px;
+    cursor: pointer;
+}
 /* MEDIA FOR PHONES/TABLETS*/
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
     .header-top {
         display: flex;
         justify-content: center;
         text-align: center;
     }
     
-    .header-top,
-    .header-nav {
+    .header-top {
         padding: 8px 12px;
     }
-    .heade-nav .nav-list {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch
-    .nav-list {
+    /*hide the nav by default*/
+    .header-nav .nav-list {
+        display: none;
+        flex-direction: column;
+        background: black;
+        border: 1px solid #e69d0b;
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+    /* when menu is open*/
+    .header-nav .nav-list.active {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        gap: 8px;
     }
-    .nav-item {
-        white-space: nowrap;
+    .header-nav .nav-item {
+        text-align: center;
     }
-    .nav-item > a {
-        font-size: 0.85rem;
-        padding: 6px 8px;
+    .header-nav .nav-item > a {
+        padding: 12px;
+        display: block;
+        color: #f0ead5;
+        font-size: 1rem;
     }
-    
+    .header-nav .nav-item > a:hover {
+        color: #e69d0b;
+    }
 }
+  /* need to add  .header-socials a {
+    color: #e69d0b;
+    margin-left: 20px;
+    font-size: 0.85rem;
+    transistion: opacity 0.2s ease;
 /*-section for first picture-----*/
 .image {
     width: 100vw;
