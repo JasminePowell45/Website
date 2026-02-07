@@ -35,7 +35,7 @@ body {
 }
 
 .header-top {
-    display: flex;
+    display: flex !important;
     position: relative;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,7 @@ body {
     z-index: 1;
 }
 .header-top .tagline {
-    color: #e69d0b;
+    color: #e69d0b; 
     font-size: 1.2rem;
     font-weight: 700;
     text-align: left;
