@@ -243,14 +243,11 @@ body {
 .menu-toggle {
     display: none;
     flex: 1;
-    text-align: right;
     background: black;
     color: #e69d0b;
     border: 1px solid #e69d0b;
     font-size: 1.8rem;
     padding: 6px 12px;
-    z-index: 9999;
-    pointer-events: auto;
 }
 /* MEDIA FOR PHONES/TABLETS*/
 @media (max-width: 768px) {
@@ -261,7 +258,7 @@ body {
         position: relative;
         min-width: 44px;
         min-height: 44px;
-        z-index: 1100;
+        z-index: 9999;
         pointer-events: auto;
     }
     .header-top {
