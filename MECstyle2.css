@@ -344,6 +344,33 @@ body {
     color: white;
 }
 
+@media (max-width: 768px) {
+    .mission-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .mission {
+        height: auto;
+    }
+    .mission-box img {
+        width: 45%;
+        max-height: 200px;
+        height: auto;
+        object-fit: cover;
+    }
+    .mission-box .container {
+        width: 55%;
+        padding: 8px;
+    }
+    mission-box .container h2 {
+        font-size: 1.1rem;
+    }
+    .mission-box .container p {
+        font-size: 0.9rem;
+        line-height: 1.4; 
+    }
+}
 /* team members */
 .team {
 
