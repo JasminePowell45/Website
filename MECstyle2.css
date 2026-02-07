@@ -398,8 +398,8 @@ body {
         height: auto;
     }
     .mission-box img {
-        width: 45%;
-        max-height: 200px;
+        width: 55%;
+        max-height: 300px;
         height: auto;
         object-fit: cover;
     }
@@ -408,10 +408,10 @@ body {
         padding: 8px;
     }
     mission-box .container h2 {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
     .mission-box .container p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         line-height: 1.4; 
     }
 }
