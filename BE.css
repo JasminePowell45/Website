@@ -170,7 +170,19 @@ nav {
     cursor: pointer;
 }
 /*MEDIA FOR TOGGLE ON IPHONES/TABLETS*/
-
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        border-radius: 4px;
+        position: relative;
+        min-width: 44px;
+        min-height: 44px;
+        z-index: 1100;
+        pointer-events: auto;
+    }
+    .
+}
 /* VIDEO */
 .hero-container {
     position: relative;
