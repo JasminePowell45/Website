@@ -254,9 +254,8 @@ body {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
-        margin-left: auto;
         border-radius: 4px;
-        position: relative;
+        position: absolute;
         min-width: 44px;
         min-height: 44px;
         z-index: 9999;
