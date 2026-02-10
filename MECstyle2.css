@@ -48,7 +48,7 @@ body {
     color: #e69d0b; 
     font-size: 1.2rem;
     font-weight: 700;
-    text-align: left;
+    text-align: center;
     letter-spacing: 0.05rem;
     line-height: 1;
     flex: 1;
@@ -242,7 +242,7 @@ body {
 /* MENU-TOGGLE HAMBURGER BURTTON (HIDDEN ON DESKTOP*/
 .menu-toggle {
     display: none;
-    flex: 1;
+    margin-left: auto;
     text-align: center;
     background: black;
     color: #e69d0b;
@@ -256,18 +256,24 @@ body {
         display: block;
         border-radius: 4px;
         position: static;
-        margin-left: 0;
+        margin-left: auto;
         min-width: 44px;
         min-height: 44px;
         z-index: 9999;
-        pointer-events: auto;
+        cursor: pointer;
     }
     .header-top {
         display: flex;
-        justify-content: center;
         text-align: center;
-        width: 100%;
+        position: relative;
     }
+    .tagline {
+        position: absolute;
+        left: 50%;
+        text-align: center;
+        white-space: nowrap;
+    }
+    
     .header-socials {
         display: none;
     }
