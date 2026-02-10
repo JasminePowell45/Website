@@ -255,7 +255,8 @@ body {
     .menu-toggle {
         display: block;
         border-radius: 4px;
-        position: absolute;
+        position: static;
+        margin-left: 0;
         min-width: 44px;
         min-height: 44px;
         z-index: 9999;
@@ -265,6 +266,7 @@ body {
         display: flex;
         justify-content: center;
         text-align: center;
+        width: 100%;
     }
     .header-socials {
         display: none;
@@ -409,7 +411,7 @@ body {
         padding: 8px;
     }
     mission-box .container h2 {
-        font-size: 0.9rem;
+        font-size: 0.6rem;
     }
     .mission-box .container p {
         font-size: 0.85rem;
@@ -418,7 +420,6 @@ body {
 }
 /* team members */
 .team {
-
     max-width: 700vh;
     margin: 0 auto;
     display: flex;
@@ -453,6 +454,8 @@ body {
     color: white;
 }
 
+@media (max-width: 768px) {
+    vhvhvhhjvjhvhj
 /*-----current events----*/
 .current-events {
     background-color: rgba(195, 137, 13, 0.862);
