@@ -266,6 +266,7 @@ body {
         display: flex;
         text-align: center;
         position: relative;
+        justify-content: flex-end;
     }
     .tagline {
         position: absolute;
