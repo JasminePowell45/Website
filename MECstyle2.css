@@ -270,7 +270,7 @@ body {
         height: 70px;
         outline: 4px solid red;
     }
-    .tagline {
+    .header-top .tagline {
          justify-self: center;
         grid-column: 1 / -1;
         text-align: center;
