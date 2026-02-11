@@ -253,26 +253,26 @@ body {
 /* MEDIA FOR PHONES/TABLETS*/
 @media (max-width: 768px) {
     .menu-toggle {
+        grid-column: 2;
+        justify-self: end;
         display: block;
         border-radius: 4px;
-        position: static;
-        margin-left: auto;
         min-width: 44px;
         min-height: 44px;
-        z-index: 9999;
+        z-index: 10;
         cursor: pointer;
     }
     .header-top {
-        display: flex;
+        display: grid;
+        grid-template-column: 1fr auto;
         text-align: center;
-        position: relative;
-        justify-content: flex-end;
+        height: 70px;
     }
     .tagline {
-        position: absolute;
-        left: 50%;
+         justify-self: center;
+        grid-column: 1 / -1;
         text-align: center;
-        white-space: nowrap;
+        pointer-events: none;
     }
     
     .header-socials {
