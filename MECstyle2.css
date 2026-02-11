@@ -271,7 +271,7 @@ body {
     .header-tagline {
         position: absolute;
         left: 1rem;
-        top: 90%;
+        top: 30%;
         white-space: nowrap;
     }
     
