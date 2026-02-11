@@ -163,6 +163,7 @@ nav {
         min-width: 44px;
         min-height: 44px;
         z-index: 1100;
+        top: 30%;
         pointer-events: auto;
     }
     /*hide the nav by default*/
