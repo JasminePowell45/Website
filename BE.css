@@ -182,7 +182,7 @@ nav {
         position: absolute;
     }
     .nav-item {
-        text-align: center;
+        display: none;
     }
     .nav-item > a {
         padding: 12px;
