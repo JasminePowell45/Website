@@ -270,9 +270,8 @@ body {
     }
     .header-tagline {
         position: absolute;
-        left: 50%;
+        left: 1rem;
         top: 50%;
-        text-align: center;
         white-space: nowrap;
     }
     
