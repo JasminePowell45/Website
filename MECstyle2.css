@@ -261,18 +261,21 @@ body {
         min-height: 44px;
         z-index: 10;
         cursor: pointer;
+        outline: 4px solid blue;
     }
     .header-top {
         display: grid;
         grid-template-column: 1fr auto;
         text-align: center;
         height: 70px;
+        outline: 4px solid red;
     }
     .tagline {
          justify-self: center;
         grid-column: 1 / -1;
         text-align: center;
         pointer-events: none;
+        outline: 4p solid green;
     }
     
     .header-socials {
