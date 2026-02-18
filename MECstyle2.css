@@ -283,6 +283,9 @@ body {
     .header-nav {
         display: none;
     }
+    .header-nav.acive {
+        display: block;
+    }
     
     /*hide the nav by default*/
     .header-nav .nav-list {
