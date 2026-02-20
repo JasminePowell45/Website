@@ -254,91 +254,55 @@ body {
 /* MEDIA FOR PHONES/TABLETS*/
 @media (max-width: 768px) {
     .menu-toggle {
-     display: block;
-    }
-    .header-nav {
-        display: none;
-    }
-    .header-nav.active {
         display: block;
+        position: relativew;
+        z-index: 10001;
     }
-    .nav-list {
-        flex-direction: column;
-    }
-}
-  
-/*
-    .header-top {
-        display: flex;
-        text-align: center;
-        height: 60px;
-        z-index: 10;
-    }
-    .header-tagline {
-        position: absolute;
-        left: 1rem;
-        top: 30%;
-        white-space: nowrap;
-    }
-    
-    .header-top, .header-socials {
-        display: none;
-        pointer-events: auto;
-    }
-    
     .header-nav {
         position: fixed;
-        display: flex;
         top: 0;
-        right: -260px;
-        width: 260px;
-        height: 100vh;
-        background: #fff;
-        z-index: 999;
-        transition: right 0.3s ease; 
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .header-nav.acive {
-       right: 0;
-        background: red;
-    }
-    .nav-list {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .header-nav ul {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-    
-    /*hide the nav by default
-    .header-nav .nav-list {
-        flex-direction: column;
-        gap: 10px;
-    }
-    /* when menu is open
-    .header-nav.active {
         right: 0;
-    }
 
-    .header-nav .nav-item > a {
-        padding: 12px;
-        color: #f0ead5;
-        font-size: 1rem;
+        width: 280px;
+        height: 100vh;
+
+        background: #000;
+        border-left: 2px solid gold;
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+
+        z-index: 10000;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .header-nav .nav-item > a:hover {
-        color: #e69d0b;
+    
+    .header-nav.active {
+        transform: translateX(0);
     }
-    .dropdown {
-        display: none;
+   .header-nav .nav-list {
+       display: flex;
+       flex-direction: column;
+       gap: 18px;
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       align-items: center;
+       justify-content: center;
     }
-    .drowpdown.active {
-        display: block;
+    .header-nav .navlist > a {
+        color: gold;
+        text-decoration: none;
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+    }
+    .header-nav .navlist a:hover {
+        text-decoration: underline;
     }
 }
+ 
 
 /*-section for first picture-----*/
 .image {
