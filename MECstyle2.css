@@ -297,6 +297,7 @@ body {
     
     .header-nav.acive {
        right: 0;
+        background: red;
     }
     .nav-list {
         flex-direction: column;
