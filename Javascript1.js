@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const headerNav = document.querySelector('.header-nav');
 
   menuToggle.addEventListener('click', () => {
+    e.stopPropagation();
     headerNav.classList.toggle('active');
-    console.log('clicked');
  });
 });
 
