@@ -281,15 +281,15 @@ body {
     
     .header-nav {
         display: none;
-    }
-    .header-nav.mobile-acive {
-        display: block;
         position: absolute;
         top: 60px;
         left: 0;
         width: 100%;
         background: #fff;
         z-index: 9998;
+    }
+    .header-nav.mobile-acive {
+        display: block;
     }
     .header-nav ul {
         flex-direction: column;
@@ -299,23 +299,18 @@ body {
     /*hide the nav by default*/
     .header-nav .nav-list {
         display: none !important;
+        flex-direction: column;
+        gap: 10px;
     }
     /* when menu is open*/
     .header-nav .nav-list.active {
         display: flex;
-        flex-direction: column;
-        background: black;
-        border: 1px solid #e69d0b;
-        top: 100%;
-        right: 0;
-        width: 100%;
     }
     .header-nav .nav-item {
         text-align: center;
     }
     .header-nav .nav-item > a {
         padding: 12px;
-        display: block;
         color: #f0ead5;
         font-size: 1rem;
     }
