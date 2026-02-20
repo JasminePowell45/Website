@@ -5,6 +5,10 @@ const navList = document.querySelector('.header-nav .nav-list');
 menuToggle.addEventListener('click', () => {
 navList.classList.toggle('active');
 });
+
+  menuToggle.addEventListener('click', () => {
+    console.log('CLICKED!');
+});
 });
 
 
