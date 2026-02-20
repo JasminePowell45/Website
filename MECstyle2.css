@@ -252,19 +252,11 @@ body {
     padding: 6px 12px;
 }
 /* MEDIA FOR PHONES/TABLETS*/
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .menu-toggle {
      display: block;
     }
-    .header-nav {
-        display: none;
-    }
-    .header-nav.active {
-        display: block;
-    }
-    .nav-list {
-        flex-direction: column;
-    }
+  
 /*
     .header-top {
         display: flex;
