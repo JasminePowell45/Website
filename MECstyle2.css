@@ -253,7 +253,7 @@ body {
 /* MEDIA FOR PHONES/TABLETS*/
 @media screen and (max-width: 768px) {
     .menu-toggle {
-        position: absolutel;
+        position: absolute;
         top: 50%;
         right: 1rem;
         display: block;
@@ -265,7 +265,7 @@ body {
         cursor: pointer;
     }
     .header-top {
-        position: relative;
+        display: flex;
         text-align: center;
         height: 60px;
         z-index: 10;
@@ -283,16 +283,20 @@ body {
     }
     
     .header-nav {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
+        position: fixed;
+        display: flex;
+        right: -250px;
+        width: 250px;
+        height: 100%;
         background: #fff;
         z-index: 9998;
+        transition: right 0.3s ease; 
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
-    .header-nav.mobile-acive {
-        display: block;
+    .header-nav.acive {
+       right: 0;
     }
     .header-nav ul {
         flex-direction: column;
@@ -301,7 +305,6 @@ body {
     
     /*hide the nav by default*/
     .header-nav .nav-list {
-        display: none !important;
         flex-direction: column;
         gap: 10px;
     }
