@@ -251,7 +251,7 @@ body {
     font-size: 1.8rem;
     padding: 6px 12px;
 }
-/* MEDIA FOR PHONES/TABLETS*/
+/* MEDIA FOR PHONES/TABLETS
 @media (max-width: 768px) {
     .menu-toggle {
      display: block;
