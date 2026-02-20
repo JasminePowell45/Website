@@ -253,14 +253,13 @@ body {
 /* MEDIA FOR PHONES/TABLETS*/
 @media screen and (max-width: 768px) {
     .menu-toggle {
-        position: absolute;
         top: 50%;
         right: 1rem;
         display: block;
         border-radius: 4px;
         min-width: 44px;
         min-height: 44px;
-        z-index: 9999;
+        z-index: 1000;
         background: red;
         cursor: pointer;
     }
@@ -285,19 +284,25 @@ body {
     .header-nav {
         position: fixed;
         display: flex;
-        right: -250px;
-        width: 250px;
-        height: 100%;
+        top: 0;
+        right: -260px;
+        width: 260px;
+        height: 100vh;
         background: #fff;
-        z-index: 9998;
+        z-index: 999;
         transition: right 0.3s ease; 
         align-items: center;
         justify-content: center;
-        flex-direction: column;
     }
+    
     .header-nav.acive {
        right: 0;
     }
+    .nav-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
     .header-nav ul {
         flex-direction: column;
         gap: 10px;
@@ -309,12 +314,10 @@ body {
         gap: 10px;
     }
     /* when menu is open*/
-    .header-nav .nav-list.active {
-        display: flex;
+    .header-nav.active {
+        right: 0;
     }
-    .header-nav .nav-item {
-        text-align: center;
-    }
+
     .header-nav .nav-item > a {
         padding: 12px;
         color: #f0ead5;
