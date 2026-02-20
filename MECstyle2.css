@@ -260,10 +260,10 @@ body {
     }
     .header-nav {
         position: fixed;
-        top: 70px;
+        top: 90px;
         right: 0;
 
-        width: 280px;
+        width: 190px;
         height: auto;
 
         background: #000;
@@ -285,7 +285,7 @@ body {
    .header-nav .nav-list {
        display: flex;
        flex-direction: column;
-       gap: 14px;
+       gap: 18px;
        margin: 0;
        padding: 0;
        list-style: none;
@@ -298,6 +298,9 @@ body {
         text-align: center;
         font-size: 0.9rem;
         letter-spacing: 0.5px;
+        max-width: 140px;
+        white-space: normal;
+        word-break: normal;
     }
     .header-nav .navlist a:hover {
         text-decoration: underline;
