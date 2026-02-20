@@ -249,10 +249,9 @@ body {
     border: 1px solid #e69d0b;
     font-size: 1.8rem;
     padding: 6px 12px;
-    z-index: 99999;
 }
 /* MEDIA FOR PHONES/TABLETS*/
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .menu-toggle {
         position: absolutel;
         top: 50%;
@@ -283,9 +282,19 @@ body {
     .header-nav {
         display: none;
     }
-    .header-nav.acive {
+    .header-nav.mobile-acive {
         display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        z-index: 9998;
     }
+    .header-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
     
     /*hide the nav by default*/
     .header-nav .nav-list {
