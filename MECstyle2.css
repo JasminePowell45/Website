@@ -260,11 +260,11 @@ body {
     }
     .header-nav {
         position: fixed;
-        top: 0;
+        top: 70px;
         right: 0;
 
         width: 280px;
-        height: 100vh;
+        height: auto;
 
         background: #000;
         border-left: 2px solid gold;
@@ -285,21 +285,23 @@ body {
    .header-nav .nav-list {
        display: flex;
        flex-direction: column;
-       gap: 18px;
+       gap: 14px;
        margin: 0;
        padding: 0;
        list-style: none;
        align-items: center;
        justify-content: center;
     }
-    .header-nav .navlist > a {
+    .header-nav .nav-list a {
         color: gold;
         text-decoration: none;
-        font-size: 1.1rem;
+        text-align: center;
+        font-size: 0.9rem;
         letter-spacing: 0.5px;
     }
     .header-nav .navlist a:hover {
         text-decoration: underline;
+        
     }
 }
  
