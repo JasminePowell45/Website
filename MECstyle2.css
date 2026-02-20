@@ -49,6 +49,7 @@ body {
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
+    align-items: center;
     letter-spacing: 0.05rem;
     line-height: 1;
     flex: 1;
@@ -250,19 +251,21 @@ body {
     font-size: 1.8rem;
     padding: 6px 12px;
 }
-/* MEDIA FOR PHONES/TABLETS
+/* MEDIA FOR PHONES/TABLETS*/
 @media screen and (max-width: 768px) {
     .menu-toggle {
-        top: 50%;
-        right: 1rem;
-        display: block;
-        border-radius: 4px;
-        min-width: 44px;
-        min-height: 44px;
-        z-index: 1000;
-        background: red;
-        cursor: pointer;
+     display: block;
     }
+    .header-nav {
+        display: none;
+    }
+    .header-nav.active {
+        display: block;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+/*
     .header-top {
         display: flex;
         text-align: center;
