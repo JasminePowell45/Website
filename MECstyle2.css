@@ -260,7 +260,8 @@ body {
         border-radius: 4px;
         min-width: 44px;
         min-height: 44px;
-        z-index: 20;
+        z-index: 9999;
+        background: red;
         cursor: pointer;
     }
     .header-top {
@@ -276,8 +277,9 @@ body {
         white-space: nowrap;
     }
     
-    .header-socials {
+    .header-top, .header-socials {
         display: none;
+        pointer-events: auto;
     }
     
     .header-nav {
