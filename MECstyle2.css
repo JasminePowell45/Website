@@ -257,7 +257,7 @@ body {
         display: flex;
         position: absolute;
         right: 15px;
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
 
         width: 40px;
@@ -266,7 +266,6 @@ body {
         align-items: center;
         justify-content: center;
 
-        background: black;
         color: #e69d0b;
         border: 2px #e69d0b;
         padding: 0;
@@ -277,7 +276,7 @@ body {
     }
     .header-nav {
         position: fixed;
-        top: 35px;
+        top: 40px;
         right: 0;
 
         width: 190px;
