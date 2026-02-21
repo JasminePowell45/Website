@@ -224,7 +224,7 @@ body {
 .dropdown-toggle {
     background: none;
     border: none;
-    color: f0ead6;
+    color: #e69d0b;
     font-size: 0.8rem;
     cursor: pointer;
     padding: 6px;
@@ -239,7 +239,7 @@ body {
 .dropdown-toggle::after {
     content: "▼";
     font-size: 0.7rem;
-    color: #f0ead6;
+    color: #e69d0b;
     margin-left: 6px;
 }
 /* MENU-TOGGLE HAMBURGER BURTTON (HIDDEN ON DESKTOP*/
@@ -267,6 +267,8 @@ body {
         justify-content: center;
 
         color: #e69d0b;
+        background: black;
+        border: 2px: #e69d0b;
         padding: 0;
         cursor: pointer;
         z-index: 10001;
