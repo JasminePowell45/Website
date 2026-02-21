@@ -227,6 +227,7 @@ body {
     font-size: 0.8rem;
     cursor: pointer;
     padding: 6px;
+    margin-left: 4px;
 }
 
 .nav-item.has-dropdowm {
@@ -336,6 +337,7 @@ body {
         text-decoration: underline;
         
     }
+    
     .header-top .header-socials {
         display: none;
     }
