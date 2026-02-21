@@ -454,7 +454,7 @@ body {
 .team {
     max-width: 700vh;
     margin: 0 auto;
-    display: flex;
+    display: block;
     align-items: flex-start;
     padding: 40px 20px;
     box-sizing: border-box;
@@ -463,6 +463,8 @@ body {
 
 .team-title {
     font-size: 2.5rem;
+    display: block;
+    position: static;
     text-align: center;
     color: white;
     flex: 0 0 200px;
