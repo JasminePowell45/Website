@@ -490,9 +490,20 @@ body {
 }
 @media (max-width:768px) {
     .team-grid {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 12px;
+        box-sizing: border-box;
+        gap: 16px;
+        
         grid-template-column: repeat(2, 1fr);
-        gap: 20px;
-        justify-items: center;
+ }
+    .team-grid > * {
+        min-width: 0;
+ }
+    .member, .member * {
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 }
 
