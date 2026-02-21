@@ -257,7 +257,7 @@ body {
         display: flex;
         position: absolute;
         right: 15px;
-        top: 40%;
+        top: 43%;
         transform: translateY(-50%);
 
         width: 40px;
@@ -267,7 +267,6 @@ body {
         justify-content: center;
 
         color: #e69d0b;
-        border: 2px #e69d0b;
         padding: 0;
         cursor: pointer;
         z-index: 10001;
