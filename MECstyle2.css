@@ -307,6 +307,21 @@ body {
        align-items: center;
        justify-content: center;
     }
+    .header-nav .nav-item {
+        width: 160px;
+        display: flex;
+        justify-content: center;
+    }
+    .header-nav .nav-item > a{
+        width: 100%;
+        display: block;
+        text-align: center;
+
+        white-space: normal;
+        line-height: 1.2;
+        font-size: 0.9rem;
+    }
+    
     .header-nav .nav-list a {
         color: #e69d0b;
         text-decoration: none;
