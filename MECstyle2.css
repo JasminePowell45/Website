@@ -446,7 +446,7 @@ body {
         padding: 8px;
     }
     mission-box .container h2 {
-        font-size: 0.6rem;
+        font-size: 0.4rem;
     }
     .mission-box .container p {
         font-size: 0.85rem;
@@ -487,6 +487,13 @@ body {
     background-color:  rgb(74, 74, 74);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     color: white;
+}
+@media (max-width:768px) {
+    .team-grid {
+        grid-template-column: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
 }
 
 /*-----current events----*/
