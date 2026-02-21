@@ -154,52 +154,7 @@ nav {
     top: 60px;
     cursor: pointer;
 }
-/*MEDIA FOR TOGGLE ON IPHONES/TABLETS*/
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-        border-radius: 4px;
-        position: relative;
-        min-width: 44px;
-        min-height: 44px;
-        z-index: 1100;
-        top: 30%;
-        pointer-events: auto;
-    }
-    /*hide the nav by default*/
-    .nav .nav-list {
-        display: none !important;
-    }
-    /* when menu is open*/
-    .nav .nav-list.active {
-        display: flex;
-        flex-direction: column;
-        background: black;
-        border: 1px solid #e69d0b;
-        top: 100%;
-        right: 0;
-        width: 100%;
-        position: absolute;
-    }
-    .nav-item {
-        display: none;
-    }
-    .nav-item > a {
-        padding: 12px;
-        display: block;
-        color: #f0ead5;
-        font-size: 1rem;
-    }
-    .nav-item > a:hover {
-        color: #e69d0b;
-    }
-    .dropdown {
-        display: none;
-    }
-    .drowpdown.active {
-        display: block;
-    }
-}
+
 /* MEDIA FOR PHONES/TABLETS*/
 @media (max-width: 768px) {
     .menu-toggle {
@@ -286,8 +241,6 @@ nav {
         text-decoration: underline;
         
     }
-    
-   
     
 }
 
@@ -380,6 +333,7 @@ nav {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: white;
+    top: 70px;
 }
 
 .overview .description {
