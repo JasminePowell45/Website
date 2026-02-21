@@ -111,8 +111,9 @@ body {
 .dropdown-toggle::after {
     content: "▼";
     color: #f0ead6;
+    margin-left: 4px;
     font-size: 0.7rem;
-    margin-left: 6px;
+    left: -6px;
 }
 .dropdown {
     display: none;
