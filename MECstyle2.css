@@ -254,9 +254,25 @@ body {
 /* MEDIA FOR PHONES/TABLETS*/
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block;
-        position: relativew;
+        display: flex;
+        position: absolute;
+        right: 15px;
+        transform: translateY(-50%);
+
+        width: 40px;
+        height: 40px;
+
+        align-items: center;
+        justify-content: center;
+
+        background: black;
+        color: #e69d0b;
+        border: 2px #e69d0b;
+        padding: 0;
+        cursor: pointer;
         z-index: 10001;
+        flex: 0 0 auto;
+        line-height: 1;
     }
     .header-nav {
         position: fixed;
@@ -306,6 +322,10 @@ body {
         text-decoration: underline;
         
     }
+    .header-top .header-socials {
+        display: none;
+    }
+    
 }
  
 
