@@ -22,6 +22,7 @@ border-bottom: 1px solid  #e69d0b;
 }
 
 .header-top {
+    position: relative;
     background-color: white;
     padding: 15px 0; /*space around logo */
     text-align: center; /*centers logo*/
@@ -153,6 +154,7 @@ nav {
     z-index: 1000;
     top: 60px;
     cursor: pointer;
+    position: absolute;
 }
 
 /* MEDIA FOR PHONES/TABLETS*/
