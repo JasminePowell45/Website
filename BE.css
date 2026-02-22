@@ -163,7 +163,7 @@ nav {
         display: flex;
         position: absolute;
         right: 15px;
-        top: 45%;
+        top: 100%;
         transform: translateY(-40%);
 
         width: 40px;
@@ -183,7 +183,7 @@ nav {
     }
     .header-nav {
         position: absolute;
-        top: -100px;
+        top: -50px;
         right: 0;
 
         width: 190px;
