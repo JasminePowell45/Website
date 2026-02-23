@@ -313,6 +313,21 @@ nav {
 
  }
 
+@media (max-width: 768px) {
+    .eventinfo {
+        padding-top: 24px;
+        margin-top: 24px;
+    }
+
+    .eventinfo h1 {
+        margin-top: 0;
+        line-height: 1.15;
+    }
+
+    .eventinfo h1::after {
+        margin-top: 10px;
+    }
+}
 /*-----GREETINGS----*/
  .container {
     width: 70%;
