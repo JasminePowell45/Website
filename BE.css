@@ -657,7 +657,30 @@ a {
         background: rgba(195, 137, 13, 0.862);
         border-radius: 2px;
     }
-    
+
+@media (max-width: 768) {
+    .award-winners {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 14px;
+        box-sizing: border-box;
+    }
+    .winner-row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+    .winner-card {
+        width: 100%;
+        box-sizing: border-box;
+        grid-column: auto !important;
+    }
+    .winner-card:nth-child(7) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        max-width: 320px;
+    }
+}
 /* nomination button */
 
 .nominate-button {
