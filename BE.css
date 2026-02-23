@@ -183,7 +183,7 @@ nav {
     }
     .header-nav {
         position: absolute;
-        top: 90px;
+        top: 150px;
         right: 0;
 
         width: 190px;
@@ -293,6 +293,7 @@ nav {
     font-size: 3em;
     font-weight: bold;
     color: black;
+    top: 40%;
     text-align: center;
     margin: 20px 0;
     font-family: 'Montserrat', sans-serif;
