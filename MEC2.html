@@ -155,12 +155,36 @@
             </div>
         </div>
     </section>
-    <section class="signup-section">
-        <div class="overlay">
-            <div class="signup-content">
-                <h2>STAY UP TO DATE!</h2>
-                <p>Enter your email below for updates regarding events, volunteer opportunities,
-                 and more!</p>
+    <section class="contact-section" id="contact">
+        <h2 class="contact-title">GET IN CONTACT!</h2>
+        <p class="contact-subtitle">Have a question or want to get involved? Send us a message here!</p>
+     
+     <form class="contact-form" action="https://formspree.io/f/xbdaqnkw" method="POST">
+      <label>
+       Name
+       <input type="text" name="name" required>
+      </label>
+      <label>
+       Email
+       <input type="email" name="email" required>
+      </label>
+      <label>
+       Subject
+       <input type="text" name="subject">
+      </label>
+      <label>
+       Message 
+       <textarea name="message" rows="6" required></textarea>
+      </label>
+
+    <button type="submit" class="conact-btn">Send Message</button>
+     </form>
+     <p class="contact-direct">
+      Prefer email? <a href="administration@metroequitylab.org">administration@metroequitylab.org</a>
+     </p>
+    </section>
+                
+             
                  <form class="signup-form">
                     <input type="email" placeholder="Your email address" required>
                     <button type="submit">Subscribe</button>
