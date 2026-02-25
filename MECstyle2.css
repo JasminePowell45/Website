@@ -766,146 +766,87 @@ body {
         text-align: center;
     }
 }
-/*----sign up section-----*/
+/*----signsection-----*/
 
-.signup-section {
-    position: relative;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.contact-section {
+    width: 100%;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #6e6e6e;
+    color: white;
+}
+
+.contact-title {
+    margin-bottom: 12px;
+}
+.contact-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #e69d0b;
+    margin: 10px auto 0 auto;
+}
+.contact-subtitle {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    display: grid;
+    gap: 14px;
+}
+
+.contact-form label {
+    display: grid;
+    gap: 6px;
+    font-weight: 600;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
-    margin: 0;
 }
 
-.signup-section .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+.contact-form input,
+.contact-form textarea {
     width: 100%;
-    height: 100%;
-    display: flex;
-    background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.5)), url('/Users/jazzpowell/Downloads/AEC11CDD-7882-4FB9-8A33-373796952B2F.JPG');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center; 
-    padding: 20px;
+    padding: 12px;
     box-sizing: border-box;
-}
-
-.signup-content {
-    text-align: center;
-    z-index: 2;
-    max-width: 600px;
-    color: white;
-}
-
-.signup-content h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.signup-content p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-.signup-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.singup-form input[type="email"] {
-    padding: 12px 15px;
-    font-size: 1rem;
+    border-radius: 4px;
     border: none;
-    border-radius: 5px;
+    background: white;
     outline: none;
 }
 
-.signup-form button {
-    padding: 12px 15px;
-    font-size: 1rem;
-    background-color: #e69d0b;
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 0 2px gold;
+}
+
+.contact-btn {
+    margin-top: 10px;
+    padding: 12px;
+    background: #e69d0b;
     color: white;
     border: none;
-    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.2s ease;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+}
+.contact-btn:hover {
+    background: #d4a000;
+}
+.contact-direct {
+    margin-top: 20px;
+    color: white;
+}
+.contact-direct a {
+    color: #e69d0b;
+    text-decoration: none;
+}
+.contact-direct a:hover {
+    text-decoration: underline;
 }
 
-.signup-form button:hover {
-    background-color: #cf8d09;
-}
-
-@media (max-width: 600px) {
-    .signup-content h2 {
-        font-size: 1.5rem;
-    }
-    .signup-content p {
-        font-size: 0.95rem;
-    }
-    .signup-form input[type="email"],
-    .signupform button {
-        width: 100%;
-    }
-}
-@media (max-width: 768) {
-    body, header {
-        font-size: 90%;
-        text-align: center;
-        padding: 0 10px;
-    }
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-list {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .nav-item.has-dropdown, .dropdown {
-        width: 100%;
-        text-align: center;
-        margin: 5px 0;
-    }
-    .logo {
-        max-width: 80%;
-        height: auto;
-        margin: 0 auto 10px auto;
-    }
-    .image, .event-image {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-    .mission, .mission-box {
-        text-align: center;
-        padding: 10px 0;
-    }
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .team, .team-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .member {
-        width: 90%;
-        margin: 10px auto;
-    }
-    p, h2, h3 {
-        text-align: center;
-        font-size: 90%;
-    }
-}
