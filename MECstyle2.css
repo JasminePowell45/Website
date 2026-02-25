@@ -651,8 +651,50 @@ body {
        font-size: 0.95;
     }
 }
+/*Youtube Video*/
+.video-section {
+    width: 100%;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background: white;
+    color: black;
+}
 
-/* events*/
+.video-title {
+    margin-bottom: 12px;
+    position: relative;
+    display: inline-block;
+}
+
+.video-title::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: gold;
+    margin: 10px auto 0 auto;
+}
+
+.video-wrapper {
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    border: 3px #e69d0b;
+    margin: 0 auto 24px auto;
+}
+.video-wrapper iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+}
+.video-description {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+/* Past events*/
 
 .event-section {
     background-color: rgb(74, 74, 74);
