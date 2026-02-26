@@ -705,6 +705,7 @@ body {
     margin-bottom: 12px;
     display: inline-block;
     position: relative;
+    
 }
 .sponsors-title::after {
     content: "";
@@ -715,7 +716,7 @@ body {
     margin: 10px auto 0 auto;
 }
 
-.sponsors-inro {
+.sponsors-intro {
     max-width: 750px;
     margin: 0 autp 35px auto;
     line-height: 1.6;
