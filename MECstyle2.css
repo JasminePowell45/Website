@@ -694,7 +694,41 @@ body {
     margin: 0 auto;
     line-height: 1.6;
 }
-/* Past events*/
+/* Sponsors*/
+.sponsors-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: e69d0b;
+    color: black;
+}
+.sponsors-title {
+    margin-bottom: 12px;
+    display: inline-block;
+    position: relative;
+}
+.sponsors-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: white;
+    margin: 10px auto 0 auto;
+}
+
+.sponsors-inro {
+    max-width: 750px;
+    margin: 0 autp 35px auto;
+    line-height: 1.6;
+}
+
+.sponsors-graphic img {
+    width: 100%;
+    max-width: 950px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* events*/
 
 .event-section {
     background-color: rgb(74, 74, 74);
