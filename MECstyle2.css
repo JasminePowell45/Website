@@ -720,13 +720,19 @@ body {
     margin: 0 autp 35px auto;
     line-height: 1.6;
 }
+.sponsors-graphic {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
 
 .sponsors-graphic img {
     width: 100%;
-    max-width: 950px;
     height: auto;
     display: block;
-    margin: 0 auto;
 }
 /* events*/
 
