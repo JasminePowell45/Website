@@ -698,7 +698,7 @@ body {
 .sponsors-section {
     padding: 60px 20px;
     text-align: center;
-    background: e69d0b;
+    background: #e69d0b;
     color: black;
 }
 .sponsors-title {
@@ -721,7 +721,7 @@ body {
     line-height: 1.6;
 }
 .sponsors-graphic {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
     background: white;
     padding: 16px;
