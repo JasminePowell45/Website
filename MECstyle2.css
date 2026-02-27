@@ -716,12 +716,12 @@ body {
     margin: 10px auto 0 auto;
 }
 
-.sponsors-intro {
+/*.sponsors-section .sponsors-intro {
     max-width: 750px;
     margin: 0 autp 35px auto;
     line-height: 1.6;
     text-align: center;
-}
+}*/
 .sponsors-graphic {
     max-width: 400px;
     margin: 0 auto;
