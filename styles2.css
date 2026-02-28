@@ -114,10 +114,17 @@ nav {
     margin-top: 8px;
 }
 .mission img {
-    height: 600px;
+    height: auto;
     width: 100%;
+    display: block;
 } 
 
+@media (max-width: 768px;) {
+    .mission img {
+        max-height: 420px;
+        object-fix: cover;
+    }
+}
 
 /*----MEET THE BOARD----*/
 
