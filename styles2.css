@@ -121,7 +121,7 @@ nav {
 
 @media (max-width: 768px;) {
     .mission img {
-        max-height: 420px;
+        max-height: 550px;
         object-fix: cover;
     }
 }
