@@ -197,6 +197,9 @@ nav {
         padding: 0 12px;
         box-sizing: border-box;
     }
+    .carousel-btn-next { 
+        right: 6px;
+    }
 }
 /*------team cards-----*/
 .person-card {
@@ -254,10 +257,11 @@ nav {
     height: 150px;
     font-size: 60px;
     position: absolute;
-    right: -40px;
+    right: 10px;
     top: 50%;
-    transform: translateY(30px);
+    transform: translateY(-50%);
     cursor: pointer;
+    z-index: 5;
 }
 
 /*-----event section-----*/
