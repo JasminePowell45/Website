@@ -33,26 +33,57 @@ window.addEventListener('resize' , updateSlideAndText);
 });
 
 
-
+// YOUR FIRST CAROUSEL
 document.addEventListener('DOMContentLoaded' , () => {
-    const track = document.querySelector('.carousel-track');
-    const slides = Array.from(track.children);
-    const nextButton = document.querySelector('.carousel-btn.next');
+    const track = document.querySelector(".carousel-track");
+    const slides = Array.from(document.querySelectorAll("carousel-slide"));
+    const nextBtn = document.querySelector(".carousel-btn.next";
+    const container = document.querySelector(".carousel-track-container");
     
-    let currentIndex = 0;
+    let index = 0;
     
-    function updateSlidePosition() {
-        const slideWidth = slides[0].getBoundingClientRect().width + 10;
-        //const moveAmount = slideWidth + 20;
-        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    function getSlidesPerView() {
+        return window.matchMedia("(max-width: 768px)").matches ? 2 + 3;
     }
-    
-    nextButton.addEventListener('click', () => {
-        currentIndex +=  3
-        if (currentIndex >= slides.length) {
-            currentIndex = 0;
+    function getSlidesStep() {
+        const slide = slides[0];
+        const slidesStyles = window.getComputedStyle(slide);
+        const trackStyles = window.getComputedStyle(track);
+        
+        const slideWidth = slide.getBoundingClientRect().width;
+
+        const gap = parseFloat(tracksStyles.columnGap || trackStyles.gap || "0" || 0;
+
+        return slideWidth + gap;
+
+        function updateButtons() {
+            const perView = getSlidesPerView();
+            const maxIndex = Math.max(0, slides.length - perView);
+
+            if (nextBtn) nextBtn.disabled = index >= maxIndex;
         }
-        updateSlidePosition();
+
+        function updatePosition() {
+            const step = getSlideStep();
+            track.style.transform = `translateX(${-index * step}px)`;
+            updateButtons();
+        }
+
+        nextBtn?.addEventListener("click", () => {
+            const perView = getSlidesPerView();
+            const maxIndex = Match.max)0, slides.length - perView);
+            index = Math.min(index + 1, maxIndex);
+            updatePosition();
+        });
+
+        window.addEventListener("resizez", () => {
+            const perView = getSlidesPerView();
+            const maxIndex = Math.max(0, slides.length - perView);
+            index = Math.min(index, maxIndex);
+            updatePosition();
+        });
+
+        track.style.transition = "transform 300ms ease";
+        updatePosition();
     });
-    window.addEventListener('resize' , updateSlidePosition);
-    });
+
