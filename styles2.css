@@ -133,6 +133,7 @@ nav {
     width: 100%;
     position: relative;
     padding: 50px 0;
+    --slides-per-view: 3;
 }
 
 .carousel-title {
@@ -161,6 +162,7 @@ nav {
 }
 .carousel-track {
     display: flex;
+    gap: 16px;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -168,16 +170,32 @@ nav {
     min-width: 33.33%;
     display: flex;
     justify-content: center;
-    margin-right: 10px;
+    box-sizing: border-box;
+    flex: 0 0 calc((100% - (16px * (var(--slides-per-view) - 1))) / var(--slides-per-view));
 }
 
 .carousel-slide img{
-    width: 160px;
-    height: 300px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: block;
     object-fit: cover;
     border-radius: 30px; /* round edges*/
 }
 
+@media (max-width: 768px) {
+    .team-carousel {
+        --slides-per-view: 2;
+    }
+    
+    .carousel-track {
+        gap: 12px;
+    }
+    
+    .carousel-track-container {
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+}
 /*------team cards-----*/
 .person-card {
     position: relative;
