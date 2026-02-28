@@ -159,6 +159,8 @@ nav {
 .carousel-track-container {
     overflow: hidden;
     width: 100%;
+    padding: 0 56px;
+    box-sizing: border-box;
 }
 .carousel-track {
     display: flex;
@@ -194,7 +196,7 @@ nav {
     }
     
     .carousel-track-container {
-        padding: 0 12px;
+        padding: 0 48px;
         box-sizing: border-box;
     }
     .carousel-btn-next { 
@@ -249,22 +251,29 @@ nav {
     color: #000;
     font-size: 1.2rem;
 }
-
-.carousel-btn.next {
-    background: #333;
+.carousel-btn {
     color: rgb(42, 174, 42);
     width: 100px;
     height: 150px;
-    font-size: 60px;
+    
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+
+    display: grid;
+    place-items: center;
+    
     cursor: pointer;
-    z-index: 5;
+    z-index: 50;
+    padding: 0;
+    margin: 0;
+}
+.carousel-btn.next {
+   right: 8px;
 }
 
-/*-----event section-----*/
+/*-----event section NEW SECTION-----*/
 
 .events-carousel-container {
     display: flex;
