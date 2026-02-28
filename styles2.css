@@ -133,7 +133,7 @@ nav {
     width: 100%;
     position: relative;
     padding: 50px 0;
-    --slides-per-view: 3;
+    --per-view: 3;
 }
 
 .carousel-title {
@@ -149,7 +149,7 @@ nav {
 .carousel-title::after {
     content: "";
     display: block;
-    width: 450px;
+    width: 100%;
     height: 4px;
     margin: 0 auto 0 auto;
     background: rgb(70, 14, 123);
@@ -163,20 +163,22 @@ nav {
 .carousel-track {
     display: flex;
     gap: 16px;
+    align-items: stretch;
     transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide {
     min-width: 33.33%;
-    display: flex;
     justify-content: center;
     box-sizing: border-box;
-    flex: 0 0 calc((100% - (16px * (var(--slides-per-view) - 1))) / var(--slides-per-view));
+    flex: 0 0 calc((100% - (16px * (var(--per-view) - 1))) / var(--per-view));
 }
 
-.carousel-slide img{
+.carousel-slide img
+.person-card img {
     width: 100%;
     aspect-ratio: 1 / 1;
+    height: auto;
     display: block;
     object-fit: cover;
     border-radius: 30px; /* round edges*/
@@ -184,7 +186,7 @@ nav {
 
 @media (max-width: 768px) {
     .team-carousel {
-        --slides-per-view: 2;
+        --per-view: 2;
     }
     
     .carousel-track {
