@@ -128,7 +128,6 @@ nav {
 
 /*----MEET THE BOARD----*/
 
-
 .team-carousel {
     width: 100%;
     position: relative;
@@ -176,7 +175,7 @@ nav {
     flex: 0 0 calc((100% - (16px * (var(--per-view) - 1))) / var(--per-view));
 }
 
-.carousel-slide img
+.carousel-slide img,
 .person-card img {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -233,7 +232,7 @@ nav {
 
 }
 
-.card-overlay  h3, p {
+.card-overlay  h3, .card-overlay p {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
