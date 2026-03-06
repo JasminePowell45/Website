@@ -24,13 +24,13 @@ The repository includes:
 
 ## Screenshots 
 ### Black Business Association of Macomb
-![BBAOM](<img width="1440" height="900" alt="screenshot1" src="https://github.com/user-attachments/assets/f0b26472-8181-4e09-858a-b2bb27f47904" />)
+![BBAOM](images/screenshot1.png)
 
 ### Metro Equity Collaborative 
-![MEC](<img width="1440" height="900" alt="screenshot2" src="https://github.com/user-attachments/assets/c91166a0-91dd-4ad4-be00-5e1afb925fca" />)
+![MEC](images/screenshot2.png)
 
 ### Black Excellence (subpage)
-![BE](<img width="1440" height="900" alt="screenshot3" src="https://github.com/user-attachments/assets/421b410e-d8f8-4539-9d1b-9f1a008ad57a" />)
+![BE](images/screenshot3.png)
 
 ## Features 
 - Multi-page website structure
