@@ -22,6 +22,13 @@ The repository includes:
 - 3 JavaScript files
 - image folders for website assests
 
+## Screenshots 
+### Black Business Association 
+
+### Metro Equity Collaborative 
+
+### Metro Equity Action Fund 
+
 ## Features 
 - Multi-page website structure
 - Separate pages for different organizations
