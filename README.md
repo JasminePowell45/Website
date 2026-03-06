@@ -33,7 +33,7 @@ The repository includes:
 ![BE](images/screenshot3.png)
 
 ## Live Site
-[View the live website](link)
+[View the live website](https://www.metroequitylab.org/)
 
 ## Features 
 - Multi-page website structure
