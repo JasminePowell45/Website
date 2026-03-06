@@ -23,11 +23,14 @@ The repository includes:
 - image folders for website assests
 
 ## Screenshots 
-### Black Business Association 
+### Black Business Association of Macomb
+![BBAOM](<img width="1440" height="900" alt="screenshot1" src="https://github.com/user-attachments/assets/f0b26472-8181-4e09-858a-b2bb27f47904" />)
 
 ### Metro Equity Collaborative 
+![MEC](<img width="1440" height="900" alt="screenshot2" src="https://github.com/user-attachments/assets/c91166a0-91dd-4ad4-be00-5e1afb925fca" />)
 
 ### Metro Equity Action Fund 
+![MEAF](<img width="1440" height="900" alt="screenshot3" src="https://github.com/user-attachments/assets/421b410e-d8f8-4539-9d1b-9f1a008ad57a" />)
 
 ## Features 
 - Multi-page website structure
