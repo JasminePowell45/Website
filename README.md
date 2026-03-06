@@ -29,8 +29,8 @@ The repository includes:
 ### Metro Equity Collaborative 
 ![MEC](<img width="1440" height="900" alt="screenshot2" src="https://github.com/user-attachments/assets/c91166a0-91dd-4ad4-be00-5e1afb925fca" />)
 
-### Metro Equity Action Fund 
-![MEAF](<img width="1440" height="900" alt="screenshot3" src="https://github.com/user-attachments/assets/421b410e-d8f8-4539-9d1b-9f1a008ad57a" />)
+### Black Excellence (subpage)
+![BE](<img width="1440" height="900" alt="screenshot3" src="https://github.com/user-attachments/assets/421b410e-d8f8-4539-9d1b-9f1a008ad57a" />)
 
 ## Features 
 - Multi-page website structure
