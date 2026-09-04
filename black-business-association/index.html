@@ -4,14 +4,17 @@
     <meta charset="UTF-8"> 
     <title>Black Business Association of Macomb</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+     rel="stylesheet">
     <link rel="stylesheet" href="/styles2.css"> 
  </head> 
  <body>
+
+  <!-- HEADER -->
  <header>
-    <header class="header-top">
-        <img class="logo" src="/images/BBAM_transp_logo-removebg-preview (1).png" alt="website logo">
-    </header>
+    <div class="header-top">
+        <img class="logo" src="/images/BBAM_transp_logo-removebg-preview (1).png" alt="Black Business Association of Macomb logo">
+    </div>
     <nav>
         <ul class="nav-list">
             <li class="nav-item">
@@ -28,63 +31,70 @@
              </ul>
     </nav>
  </header>
- <section class="mission">
-    <img src="/images/Copy of this is text.JPEG" alt="why us">
- </section>
- <section class="team-carousel">
-    <h2 class="carousel-title">MEET OUR TEAM</h2>
 
- <div class="carousel-track-container">
-    <ul class="carousel-track">
+  <!-- MISSION -->
+  <section class="mission">
+   <img src="/images/Copy of this is text.JPEG" alt="why us">
+  </section>
+  
+  <!-- Meet Our Team -->
+ <section class="team-section">
+  <h2 class="section-heading">Meet Our Team</h2>
 
-        <li class="carousel-slide">
-            <div class="person-card">
-        <img src="/images/Maurice.jpg" alt="team member 1">
-        <div class="card-overlay">
-        <h3>Maurice Wallace</h3>
-        <p>Board Director</p>
-        </div>
-        </div>
-        </li>
-        <li class="carousel-slide">
-            <div class="person-card">
-        <img src="/images/Antoinette W.JPG" alt="team member 2">
-        <div class="card-overlay">
-            <h3>Antoinette Wallace</h3>
-            <p>Board Vice Chair</p>
-        </div>
-        </div>
-        </li>
-        <li class="carousel-slide">
-            <div class="person-card">
-        <img src="/images/dwayne.jpg" alt="team member 3">
-        <div class="card-overlay">
-            <h3>Dwayne Sylvester</h3>
+  <div class="team-carousel-wrapper">
+   <button class="team-btn prev" aria-label="Previous team member">&#10094;
+   </button>
+
+  <div class="team-track-container">
+     <ul class="team-track">
+      <li class="team-slide">
+       <div class="person-card">
+          <img src="/images/Maurice.jpg" alt="Maurice Wallace">
+          <div class="card-overlay">
+            <h3>Maurice Wallace</h3>
             <p>Board Director</p>
-        </div>
-        </div>
-        </li>
-    <li class="carousel-slide">
+          </div>
+       </div>
+      </li>
+      <li class="team-slide">
+       <div class="person-card">
+         <img src="/images/Antoinette W.JPG" alt="Antoinette Wallace">
+         <div class="card-overlay">
+           <h3>Antoinette Wallace</h3>
+           <p>Board Vice Chair</p>
+         </div>
+       </div>
+      </li>
+      <li class="team-slide">
+       <div class="person-card">
+         <img src="/images/dwayne.jpg" alt="Dwayne Slyvester">
+         <div class="card-overlay">
+           <h3>Dwayne Slyvester</h3>
+           <p>Board Director</p>
+         </div>
+       </div>
+      </li>
+      <li class="team-slide">
         <div class="person-card">
-        <img src="/images/RhondaP.jpg" alt="team member 4">
+        <img src="/images/RhondaP.jpg" alt="Rhonda Powell">
         <div class="card-overlay">
             <h3>Rhonda Powell</h3>
             <p>Board President</p>
         </div>
         </div>
     </li>
-    <li class="carousel-slide">
+    <li class="team-slide">
         <div class="person-card">
-        <img src="/images/Antony L.JPG" alt="team member 5">
+        <img src="/images/Antony L.JPG" alt="Anthony Lewis">
         <div class="card-overlay">
             <h3>Anthony Lewis</h3>
             <p>Board Director</p>
         </div>
         </div>
     </li>
-    <li class="carousel-slide">
+    <li class="team-slide">
         <div class="person-card">
-        <img src="/images/Michelle D.jpg" alt="team member 6">
+        <img src="/images/Michelle D.jpg" alt="Michelle Davidson">
         <div class="card-overlay">
             <h3>Michelle Davidson</h3>
             <p>Board Secretary</p>
@@ -93,59 +103,69 @@
     </li>
     </ul>
 </div>
-<buttton type="button" class="carousel-btn next" aria-label="Next">&#10095</buttton>
+   
+<buttton class="team-btn next" aria-label="Next team member">&#10095</buttton>
+  </div>
  </section>
-<section class="event-section">
-    <h2 class="section-title">Past Events</h2>
-        <div class="events-carousel-container">
-        <!--Left: Carousel--->
-            <div class="carousel-left">
-                <div class="track-container">
-            <ul class="track">
-                <li class="slide">
-            <img src="/images/IMG_1651.jpeg" alt="event 1"></li>
-            <li class="slide">
-                <img src="/images/IMG_0410.JPEG" alt="event 2"></li>
-            <li class="slide">
-                <img src="/images/IMG_6192.jpg" alt="event 3"></li>
+
+  <!-- PAST EVENTS -->
+<section class="events-section">
+    <h2 class="section-heading light">Past Events</h2>
+ 
+        <div class="events-layout">
+        <!--image carousel--->
+            <div class="events-image-side">
+              <button class="event-btn prev" aria-label="Previous event">&#10094;</button>
+                <div class="events-track-container">
+                   <ul class="events-track">
+                    <li class="event-slide">
+            <img src="/images/IMG_1651.jpeg" alt="C-Suite Chat event"></li>
+            <li class="event-slide">
+                <img src="/images/IMG_0410.JPEG" alt="BBAOM Mixer event"></li>
+            <li class="event-slide">
+                <img src="/images/IMG_6192.jpg" alt="Tiffy's Beauty Bar"></li>
                 </ul>
                 </div>
-                <button class="carousell-btn next">&#10095;</button>
-                </div>
-                <div class="carousel-right">
-                    <div class="event-details">
-                <div class="event-text active" data-index="0">
-                <h3>C-Suite Chat!</h3>
-                <p>October 26, 2021</p>
-                <p>VINO & VIBES</p>
-        </div>
-        <div class="event-text" data-index="1">
-            <h3>Black Business Association of Macomb Mixer </h3>
-            <p>Monday, August 25th</p>
-            <p>A gathering for business owners to network and hear from a panel of 
-                entrepreneurs that are operating in Macomb County.
-            </p>
+                <button class="event-btn next" aria-label="Next event">&#10095;</button>
             </div>
-        <div class="event-text" data-index="2">
+         
+            <!-- Event Details -->
+          
+                <div class="events-details-side">
+                    <div class="event-detail active" data-index="0">
+                     <h3>C-Suite Chat</h3>
+                     <p class="event-date">October 26, 2021</p>
+                     <p class="event-desc">VINO &amp; VIBES</p>
+                    </div>
+                
+                <div class="event-detail" data-index="1">
+            <h3>Black Business Association of Macomb Mixer</h3>
+            <p class="event-date"> Monday, August 25th"</p>
+            <p class="event-desc"> A gathering for business owners to network and hear from a panel of 
+                entrepreneurs that are operating in Macomb County."</p>
+            </div>
+        <div class="event-detail" data-index="2">
             <h3>Tiffy's Beauty Bar Grand Opening & Ribbon Cutting</h3>
-            <p>Septemeber 12th</p>
-            <p>Music, light food and refreshments as we celebrate the grand opening with Tiffy!</p>
-        </div>
+            <p class="event-date"> Septemeber 12th</p>
+            <p class="event-desc"> Music, light food and refreshments as we celebrate the grand opening with Tiffy!</p>
         </div>
         </div>
         </div>
  </section>
-    <section class="about-us">
-        <div class="about-containers">
+
+  <!-- ABOUT US -->
+    <section class="about-section">
+        <div class="about-inner">
             <div class="about-text">
                 <h2>About Us</h2>
-            <div class="about-section vision">
+             
+            <div class="about-block">
                 <h3>Our Vision</h3>
                 <p>A thriving ecosystem of influence, expertise and resources that ensures our dollars 
                     recirculate, and generates wealth in Black communities across Macomb County.</p>
                 </div>
             
-            <div class="about-section core-values">
+            <div class="about-block">
                 <h3>Core Values</h3>
                 <ul>
                     <li>Collaboration</li>
@@ -156,22 +176,46 @@
                 </ul>
             </div>
             
-            <div class="about-section contact-info">
-                <h3>Contact Information</h3>
-                <p>Email: Information@bbaom.org</p>
+            <div class="about-block">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:Information@bbaom.org">Information@bbaom.org</a></p>
+                <p>97 Kibbee St. Mount Clemens, MI 48043</p>
             </div>
-
-        <div class="about-section mailing-address">
-            <h3>Mailing Address</h3>
-            <p>97 Kibbee St. Mount Clemens, MI 48043</p>
-        </div>
-        </div>
+            </div>
 
         <div class="about-image">
                <img src="/images/389BD412-1766-42FD-BA11-B7733E88F6F8.jpeg" alt="About us Pic">
                 </div>
             </div>
     </section>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+     <div class="footer-brand">
+      <img src="/image/BBAM_transp_logo-removebg-preview (1).png" alt="BBAOM logo" class="footer-logo">
+        <p> Black Business Association of Macomb</p>
+     </div>
+     <div class="footer-links">
+      <h4>Navigate</h4>
+      <ul>
+       <li><a href="/black-business-association/">Black Business Association</a></li>
+       <li><a href="/metro-equity-collaborative/">Metro Equity Collaborative</a></li>
+       <li><a href="metro-equity-collaborative/be/">Black Excellence</a></li>
+       <li><a href="/metro-equity-action-fund/">Metro Equity Action Fund</a></li>
+      </ul>
+     </div>
+    <div class="footer-contact">
+     <h4>Contact</h4>
+     <p><a href="mailto:Information@bbaom.org">Information@bbaom.org</a></p>
+
+     <p>97 Kibbee St.<br>Mount Clemens, MI 48043</p>
+    </div>
+    </div>
+   <div class="footer-bottom">
+    <p>&copy; 2026 Black Business Association of Macomb. All rights reserved</p>
+   </div>
+  </footer>
+  
 <script src="/JavascriptBBAOM.js"></script>
  </body>
  </html> 
