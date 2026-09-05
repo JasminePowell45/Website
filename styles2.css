@@ -184,7 +184,7 @@ nav {
 }
 
 .team-slide {
-    flex: 0 0 calc((100% - 40px) / 3;
+    flex: 0 0 calc((100% - 40px) / 3);
     min-width: 0;
 }
 
@@ -517,7 +517,7 @@ nav {
     flex-wrap: wrap;
 }
 
-.foooter-brand {
+.footer-brand {
     flex: 1;
     min-width: 200px;
 }
@@ -528,7 +528,7 @@ nav {
 }
 
 .footer-brand p {
-    font-size: 0.15rem;
+    font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.5);
     line-height: 1.6;
 }
