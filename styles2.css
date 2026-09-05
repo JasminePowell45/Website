@@ -241,7 +241,7 @@ nav {
 
 /* Team carousel buttons */
 .team-btn {
-    background: rgb(70, 14, 123);
+    background: rgb(42, 174, 42);
     color: white;
     border: none;
     width: 48px;
@@ -252,6 +252,7 @@ nav {
     flex-shrink: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: background 0.2s ease;
     z-index: 10;
 }
