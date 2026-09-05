@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   
     <link rel="stylesheet" href="/MECstyle2.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
  </head> 
  <body>
@@ -83,50 +83,62 @@
         </div>
         </div>
     </section>
+  
  <!-- Current Events-->
-   <section class="current-events">
-  <h2 class="section-title">Current Events</h2>
 
-  <div class="flyers-row">
-   <div class="event-card">
-    <a href="https://www.eventbrite.com/e/mcbe-state-of-black-macomb-forum-registration-1978444227944?aff=erelexpmlt" class="flyer-link">
-     <img src="/images/State of Black Macomb 2026 Flyer.jpg" class="event-image"/>
-     
-     <div class="flyer-overlay">
-      <span>Click to Registration</span></div>
-    </a>
-    <h3>State of Black Macomb Forum</h3>
-    <p class="event-date">Friday, February 13, 2026</p>
+<section class="current-events">
+ <h2 class="section-title">Events</h2>
+
+ <div class="events-carousel-wrapper">
+   <button class="events-btn prev" arial-label="Previous event">&#10094;</button>
+
+   <div class="events-track-container">
+     <ul class="events-track">
+        <li class="event-card">
+          <a href="https://www.eventbrite.com/e/mcbe-state-of-black-macomb-forum-registration-1978444227944?aff=erelexpmlt" class="flyer-link">
+           <img src="/images/State of Black Macomb 2026 Flyer.jpg" alt="Sate of Black Macomb Forum Flyer">
+           <div class="flyer-overlay"><span>Click to Register</span></div>
+          </a>
+          <h3>State of Black Macomb Forum</h3>
+          <p class="event-date">Friday, February 13, 2026</p>
+        </li>
+
+        <li class="event-card">
+          <a href="https://www.zeffy.com/en-US/ticketing/2026-mcbe-black-business-and-health-expo" class="flyer-link">
+             <img src="/images/Black Business Expo Vendors 2026 (1).jpg" alt="Black Business and Health Expo Flyer">
+             <div class="flyer-overlay"><span>Click to Register</span></div>
+          </a>
+          <h3>Black Business &amp; Health Expo</h3>
+          <p class="event-date">Saturday, February 21, 2026</p>
+        </li>
+
+        <li class="event-card">
+          <a href="https://www.eventbrite.com/e/macomb-celebration-of-black-excellence-awards-dinner-and-gala-tickets-1976404929347" class="flyer-link">
+             <img src="/images/MCBE 2026 Gala Flyer.jpg" alt="MCBE 2026 Gala Flyer">
+             <div class="flyer-overlay">
+          </a>
+           <h3>Gala</h3>
+           <p class="event-date">Saturday, February 28, 2026</p>
+        </li>
+
+      <li class="event-card">
+        <a href="#" class="flyer-link">
+          <img src="/images/Blue & White Dynamic Health Fair Flyer 2.png" alt="Community Heath Fair Flyer">
+          <div class="flyer-overlay"><span>Learn More</span></div>
+        </a>
+        <h3>1st Annual Community Health Fair</h3>
+        <p class="event-date">Saturday, September27th</p>
+      </li>
+     </ul>
    </div>
 
-   <div class="event-card">
-       <a href="https://www.zeffy.com/en-US/ticketing/2026-mcbe-black-business-and-health-expo" class="flyer-link">
-    <img src="/images/Black Business Expo Vendors 2026 (1).jpg" class="event-image"/>
-        
-    <div class="flyer-overlay">
-     <span>Click to Register</span></div>
-   </a>
-    <h3>Black Business & Health Expo</h3>
-    <p class="event-date">Saturday, February 21, 2026</p>
-   </div>
+   <button class="events-btn next" aria-label="Next Event">&#10095;</button>
+ </div>
+
+ <div class="events-cta">Click or tap the flyer to register</div>
+</section>
+  <!-- need to strip the clickable <a href from flyers because they are now past events-->
    
-   <div class="event-card">
-    <a href="https://www.eventbrite.com/e/macomb-celebration-of-black-excellence-awards-dinner-and-gala-tickets-1976404929347" class="flyer-link">
-     <img src="/images/MCBE 2026 Gala Flyer.jpg" class="event-image"/>
-     
-    <div class="flyer-overlay">
-     <span>Click to Register</span></div>
-    </a>
-     
-    <h3>Gala</h3>
-    <p class="event-date">Saturday, February 28, 2026</p>
-   </div>
-
-   <div class="events-cta">
-    Click or tap any flyer to register
-   </div>
-  </div>
-   </section>
 <!--Video Section-->
   <section class="video-section">
    <h2 class="video-title">Rhonda Powell on WBIV Taking MCBE</h2>
@@ -142,29 +154,18 @@
   </section>
   <!--sponsors-->
   <section class="sponsors-section">
-   <h2 class="sponsors-title">Our Sponsors</h2>
-   <p class="sponsors-intro">
+    <div class="sponsors-inner">
+      <h2 class="sponsors-title">Our Sponsors</h2>
+      <p class="sponsors-intro">
     We are grateful for the partners and organizations whose support helps advance the mission of Metro Equity Collaborative.
    </p>
+      <div class="sponsors-graphic">
+        <img src="/images/MCBE Sponsor signs.pptx.png">
+      </div>
+    </div>
+ </section>
 
-   <div class="sponsors-graphic">
-     <img src="/images/MCBE Sponsor signs.pptx.png">
-   </div>
-  </section>
-  <!-- events--->
-    <section class="event-section">
-    <div class="event-container">
-        <div class="event-text">
-            <h2>1st Annual Community Health Fair</h2>
-            <p><strong>Saturday, September 27th</strong></p>
-            <p>Find out information regarding your health state, while supporting the Johnson family!</p>
-            </div>
-        
-            <div class="event-image">
-                <img src="/images/Blue & White Dynamic Health Fair Flyer 2.png" alt="event 1">
-            </div>
-        </div>
-    </section>
+  <!-- contact information form-->
     <section class="contact-section" id="contact">
         <h2 class="contact-title">GET INVOLVED!</h2>
         <p class="contact-subtitle">Have a question or want to get involved? Send us a message here!</p>
@@ -193,6 +194,32 @@
       Prefer email? <a href="administration@metroequitylab.org">administration@metroequitylab.org</a>
      </p>
     </section>
+
+  <!--footer-->
+  <footer class="site-footer">
+    <div class=footer-inner">
+      <div class="footer-brand">
+        <img src="/images/MEC Logo.PNG" alt="MEC Logo" class="Footer Logo">
+        <p>Metro Equity Collaborative</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <ul>
+           <li><a href="/black-business-association/">Black Business Association</a></li>
+           <li><a href="/metro-equity-collaborative/">Metro Equity Collaborative</a></li>
+           <li><a href="/metro-equity-collaborative/be/">Black Excellence</a></li>
+           <li><a href="/metro-equity-action-fund/">Metro Equity Action Fund</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:administration@metroequitylab.org">administration@metroequitylab.org</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Metro Equity Collaborative All rights reserved</p>
+    </div>
+  </footer>
          
     <script src="/Javascript1.js"></script>
  </body>
