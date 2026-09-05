@@ -1,89 +1,114 @@
 
 document.addEventListener('DOMContentLoaded' , () => {
-const track = document.querySelector('.track');
-const slides = Array.from(track.children);
-const nextButton = document.querySelector('.carousell-btn.next');
-const eventTexts = Array.from(document.querySelectorAll('.event-text'));
 
-let currentIndex = 0;
+    // ========================================
+    // TEAM CAROUSEL
+    // ========================================
+    
+const teamTrack = document.querySelector('.team-track');
+const teamSlides = Array.from(document.querySelectorAll('.team-slide'));
+const teamPrevBtn = document.querySelector('.team-btn.prev');
+const teamNextBtn = document.querySelector('.team-btn.next');
 
-console.log("slides length:", slides.length);
-console.log("eventTexts length:", eventTexts.length);
+let teamIndex = 0;
 
-function updateSlideAndText() {
-    const slideWidth = slides[0].getBoundingClientRect().width;
-    track.style.transform =  `translateX(-${currentIndex * slideWidth}px)`;
-
-console.log("Updating slide. currentIndex:", currentIndex)
-eventTexts.forEach((text, index) => {
-    text.classList.toggle('active', index === currentIndex);
-    console.log(index, text.classList.contains('active'));
-});
+function getTeamPerView() {
+    if (window.innerWidth <= 480) return 1;
+    if (window.innerWidth <= 768) return 2;
+    return 3;
 }
 
+function getTeamStep() {
+    if (!teamsSlides[0] return 0;
+    const slideWidth = teamSlides[0].getBoundingClientRect().width;
+    const trackStyles = window.getComputerStyle(teamTrack);
+    const gap = parseFloat(trackStyles.gap || trackStyles.colummGap || '0');
+    return slideWidth + gap;
+}
 
-nextButton.addEventListener('click', () => {
-    currentIndex+= 1;
-    if (currentIndex >= slides.length) currentIndex = 0;
-    updateSlideAndText();
-    console.log("currentIndex after click:", currentIndex);
-});
-
-window.addEventListener('resize' , updateSlideAndText);
-});
-
-
-// YOUR FIRST CAROUSEL
-document.addEventListener('DOMContentLoaded' , () => {
-    const track = document.querySelector(".carousel-track");
-    const slides = Array.from(document.querySelectorAll("carousel-slide"));
-    const nextBtn = document.querySelector(".carousel-btn.next";
-    const container = document.querySelector(".carousel-track-container");
+function updateTeamCarousel() {
+    const perView = getTeamPerView();
+    const maxIndex = Math.max(0, teamSlides.length - perView);
+    teamIndex = Math.min(teamIndex, maxIndex);
     
-    let index = 0;
-    
-    function getSlidesPerView() {
-        return window.matchMedia("(max-width: 768px)").matches ? 2 + 3;
-    }
-    function getSlidesStep() {
-        const slide = slides[0];
-        const slidesStyles = window.getComputedStyle(slide);
-        const trackStyles = window.getComputedStyle(track);
-        
-        const slideWidth = slide.getBoundingClientRect().width;
+    const step = getTeamStep();
+    teamTrack.style.transform = `translateX(-${teamIndex * step}px)`;
 
-        const gap = parseFloat(tracksStyles.columnGap || trackStyles.gap || "0" || 0;
+    if (teamPrevBtn) teamPrevBtn.disabled = teamIndex === 0;
+    if (teamNextBtn) teamNextBtn.disabled = teamIndex >= maxIndex;
+}
 
-        return slideWidth + gap;
-
-        function updateButtons() {
-            const perView = getSlidesPerView();
-            const maxIndex = Math.max(0, slides.length - perView);
-
-            if (nextBtn) nextBtn.disabled = index >= maxIndex;
-        }
-
-        function updatePosition() {
-            const step = getSlideStep();
-            track.style.transform = `translateX(${-index * step}px)`;
-            updateButtons();
-        }
-
-        nextBtn?.addEventListener("click", () => {
-            const perView = getSlidesPerView();
-            const maxIndex = Match.max)0, slides.length - perView);
-            index = Math.min(index + 1, maxIndex);
-            updatePosition();
-        });
-
-        window.addEventListener("resizez", () => {
-            const perView = getSlidesPerView();
-            const maxIndex = Math.max(0, slides.length - perView);
-            index = Math.min(index, maxIndex);
-            updatePosition();
-        });
-
-        track.style.transition = "transform 300ms ease";
-        updatePosition();
+if (teamPrevBtn) {
+    teamPrevBtn.addEventListner('click', () => {
+        teamIndex = Math.max(0, teamIndex - 1); 
+        updateTeamCarousel();
     });
+}
+
+if (teamNextBtn) {
+    teamNextBtn.addEventListener('click' , () => {
+        const perView = getTeamPerView();
+        const maxIndex = Math.max(0, teamSlides.length - perView);
+        teamIndex = Math.min(teamIndex + 1, maxIndex);
+        updateTeamCarousel();
+    });
+}
+
+window.addEventListener('resize', updateTeamCarousel);
+    updateTeamCarousel();
+
+// =============================================
+// EVENTS CAROUSEL 
+// =============================================
+
+const eventsTrack = document.querySelector('.events-track');
+const eventSlides = Array.from(document.querySelectorAll('.event-slide'));
+const eventPrevBtn = document.querySelector('.event-btn.prev');
+const eventNextBtn = document.querySelector('.event-btn.next');
+const eventDetails = Array.from(document.querySelectorAll('.event-detail'));
+
+let eventIndex = 0;
+
+function getEventStep() {
+    if (!eventSlides[0]) return 0;
+    return eventSlides[0].getBoundingClientRect().width;
+}
+
+function updateEventCarousel() {
+    const maxIndex = eventSlides.length - 1;
+    eventIndex = Math.min(Math.max(eventIndex, 0), maxIndex);
+
+    const step = getEventStep();
+    eventsTrack.style.transform = `translateX(-${eventIndex * step}px)`;
+
+    // Update active event detail
+    eventDetails.forEach((detail, i) => {
+        detail.classList.toggle('active', i === eventIndex);
+    });
+
+    if (eventPrevBtn) eventPrevBtn.disabled = eventIndex === 0;
+    if (eventNextBtn) eventNextBtn.disabled = eventIndex >= maxIndex;
+}
+
+if (eventPrevBtn) {
+    eventPrevBtn.addEventListener('click', () => {
+        eventIndex = Math.max(0, eventIndex - 1);
+        updateEventCarousel();
+    });
+}
+
+if (eventNextBtn) {
+    eventNextBtn.addEventListner('click', () => {
+        eventIndex = Math.min(eventIndex + 1, eventSlides.length - 1);
+        updateEventsCarousel();
+    });
+}
+
+window.addEventListener('resize', updateEventCarousel);
+updateEventCarousel();
+
+});
+
+    
+
 
