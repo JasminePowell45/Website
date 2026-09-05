@@ -39,7 +39,7 @@ function updateTeamCarousel() {
 }
 
 if (teamPrevBtn) {
-    teamPrevBtn.addEventListner('click', () => {
+    teamPrevBtn.addEventListener('click', () => {
         teamIndex = Math.max(0, teamIndex - 1); 
         updateTeamCarousel();
     });
