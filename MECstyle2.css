@@ -72,7 +72,7 @@ body {
 .header-socials a {
     color: #e69d0b;
     font-size: 1rem;
-    transistion: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -665,7 +665,7 @@ body {
 }
 
 @media (max-width: 600px) {
-    .flyer-link. .event-card img {
+    .flyer-link, .event-card img {
         height: 320px;
     }
 
@@ -751,7 +751,7 @@ body {
 
 .sponsors-intro {
     max-width: 750px;
-    margin: 0 autp 24px auto;
+    margin: 0 auto 24px auto;
     line-height: 1.6;
     text-align: center;
 }
