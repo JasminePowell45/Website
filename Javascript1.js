@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const eventsTrack = document.querySelector('.events-track');
-    const eventCards = Array.from(document.querySelectorALL('.event-card'));
+    const eventCards = Array.from(document.querySelectorAll('.event-card'));
     const eventsPrevBtn = document.querySelector('.events-btn.prev');
     const eventsNextBtn = document.querySelector('.events-btn.next');
 
