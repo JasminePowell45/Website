@@ -561,18 +561,18 @@ body {
 }
 
 .flyer-link {
-    display: block;
+    display: inline-block;
     position: relative;
     width: 100%;
     height: 380px;
 }
 
 .event-card img {
-    width: 100%;
+    max-width: 100%;
     height: 380px;
     display: block;
     object-fit: contain;
-    background: rgba(0,0,0,0.15);
+    background: transparent;
     border-radius: 8px;
 }
 
