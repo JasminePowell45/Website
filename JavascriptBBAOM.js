@@ -21,7 +21,7 @@ function getTeamPerView() {
 function getTeamStep() {
     if (!teamsSlides[0] return 0;
     const slideWidth = teamSlides[0].getBoundingClientRect().width;
-    const trackStyles = window.getComputerStyle(teamTrack);
+    const trackStyles = window.getComputedStyle(teamTrack);
     const gap = parseFloat(trackStyles.gap || trackStyles.colummGap || '0');
     return slideWidth + gap;
 }
@@ -55,7 +55,7 @@ if (teamNextBtn) {
 }
 
 window.addEventListener('resize', updateTeamCarousel);
-    updateTeamCarousel();
+updateTeamCarousel();
 
 // =============================================
 // EVENTS CAROUSEL 
