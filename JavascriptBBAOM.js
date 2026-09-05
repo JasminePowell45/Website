@@ -100,7 +100,7 @@ if (eventPrevBtn) {
 if (eventNextBtn) {
     eventNextBtn.addEventListener('click', () => {
         eventIndex = Math.min(eventIndex + 1, eventSlides.length - 1);
-        updateEventsCarousel();
+        updateEventCarousel();
     });
 }
 
