@@ -20,7 +20,7 @@ body {
     position: relative;
     z-index: 1;
     border-bottom: 1px solid  #e69d0b;
-    width: 100vw;
+    width: 100%;
 }
 
 .header-top,
