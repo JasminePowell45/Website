@@ -19,7 +19,7 @@ function getTeamPerView() {
 }
 
 function getTeamStep() {
-    if (!teamsSlides[0]) return 0;
+    if (!teamSlides[0]) return 0;
     const slideWidth = teamSlides[0].getBoundingClientRect().width;
     const trackStyles = window.getComputedStyle(teamTrack);
     const gap = parseFloat(trackStyles.gap || trackStyles.colummGap || '0');
