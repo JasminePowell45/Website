@@ -44,7 +44,7 @@ body {
     background-color: #000;
     z-index: 1;
 }
-.header-top .tagline {
+.header-top .header-tagline {
     color: #e69d0b; 
     font-size: 1.2rem;
     font-weight: 700;
@@ -57,7 +57,7 @@ body {
 }
 
 .header-top span,
-.header-top .tagline {
+.header-top .header-tagline {
     color: #e69d0b !important;
 }
 
