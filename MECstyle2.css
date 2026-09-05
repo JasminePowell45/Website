@@ -46,8 +46,9 @@ body {
 }
 .header-top .header-tagline {
     color: #e69d0b; 
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 0.85rem;
+    font-weight: 400;
+    font-style: italic;
     text-align: center;
     align-items: center;
     letter-spacing: 0.05rem;
