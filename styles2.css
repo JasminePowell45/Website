@@ -104,7 +104,7 @@ nav {
     white-space: nowrap;
     text-decoration: none;
     color: black;
-    transistion: background 0.2s ease;
+    transition: background 0.2s ease;
 }
 
 /* ====================================
@@ -312,12 +312,12 @@ nav {
     transition: transform 0.4s ease-in-out;
 }
 
-.events-slide {
+.event-slide {
     flex: 0 0 100%;
     min-width: 100%;
 }
 
-.events-slide img {
+.event-slide img {
     width: 100%;
     height: 600px;
     object-fit: contain;
@@ -335,7 +335,7 @@ nav {
     height: 44px;
     border-radius: 50%;
     font-size: 1rem;
-    cursor: pointer;'
+    cursor: pointer;
     flex-shrink: 0;
     display: flex;
     align-items: center;
