@@ -1,10 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // =========================================================
-    // UPCOMING EVENTS
-    // Add next year's events here. Once an event's date has
-    // passed, it disappears from the page automatically —
-    // nothing else needs to be touched or deleted.
+    // ALL EVENTS - past and future, in one list
+    // Add every new event here with its real date. This one list
+    // automatically becomes BOTH sections on the page:
+    //   - Still in the future?  -> shows in "Upcoming Events"
+    //   - Already happened?     -> shows in "Past Events" gallery,
+    //                              newest first, capped to the most
+    //                              recent 8 so that section never
+    //                              grows without limit. Anything
+    //                              older just quietly drops off -
+    //                              you never need to delete it.
     // =========================================================
     const events = [
         {
@@ -27,11 +33,22 @@ document.addEventListener('DOMContentLoaded', () => {
             dateLabel: "Saturday, February 28th 2026",
             img: "/images/MCBE 2026 Gala Flyer.jpg",
             link: "https://www.eventbrite.com/e/macomb-celebration-of-black-excellence-awards-dinner-and-gala-tickets-1976404929347"
-        }
+        },
+        { title: "Concert Gospel", date: "2025-02-16", img: "/images/Gospel concert 2 (1).jpeg" },
+        { title: "Ultimate Chef Challenge", date: "2025-02-17", img: "/images/Chef Challenge.jpeg" },
+        { title: "Gala", date: "2025-02-22", img: "/images/MCBE Gala Flyer.jpeg" },
+        { title: "HBCU College Fair", date: "2025-02-18", img: "/images/HBCU Fair.jpeg" },
+        { title: "Emerging Leaders Day", date: "2025-02-19", img: "/images/emerging leaders day (1).jpeg" },
+        { title: "Health & Wellness Fair", date: "2025-02-20", img: "/images/Health and Wellness.jpeg" },
+        { title: "Spoken Word and Q&A Session", date: "2025-02-15", img: "/images/BlackMacombForum.Final.png" },
+        { title: "Vendor & Resource Expo", date: "2025-02-15", img: "/images/Black Business Expo 2025 (1).png" }
     ];
 
     const today = new Date();
     const eventsList = document.getElementById('eventsList');
+    const pastEventsRow = document.getElementById('pastEventsRow');
+
+    // --- Upcoming Events (future dates) ---
     const upcoming = events.filter(e => new Date(e.date) >= today);
 
     if (eventsList) {
@@ -49,6 +66,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 </li>
             `).join('');
         }
+    }
+
+    // --- Past Events gallery (most recent 8 only) ---
+    const PAST_EVENTS_LIMIT = 8;
+    const past = events
+        .filter(e => new Date(e.date) < today)
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .slice(0, PAST_EVENTS_LIMIT);
+
+    if (pastEventsRow) {
+        pastEventsRow.innerHTML = past.map(e => `
+            <div class="event">
+                <img src="${e.img}" alt="${e.title}">
+                <div class="caption">
+                    <h3>${e.title}</h3>
+                </div>
+            </div>
+        `).join('');
     }
 
     // =========================================================
