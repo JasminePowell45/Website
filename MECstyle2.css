@@ -525,7 +525,7 @@ body {
 
 /*-----EVENTS CAROUSEL----*/
 .current-events {
-    background-color: rgba(195, 137, 13, 0.862);
+    background-color: rgba(58, 58, 58);
     padding: 1.5rem 2rem;
     box-sizing: border-box;
 }
@@ -534,6 +534,7 @@ body {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
+    color: white;
 } 
 
 .events-carousel-wrapper {
@@ -580,10 +581,12 @@ body {
 .event-card img {
     max-width: 100%;
     height: 380px;
+    width: auto;
     display: block;
     object-fit: contain;
     background: transparent;
     border-radius: 8px;
+    border: 1px solid rgba(230, 157, 11, 0.4);
 }
 
 .flyer-overlay {
@@ -620,11 +623,11 @@ body {
 
 .event-card h3 {
     margin-top: 16px;
-    color: #000;
+    color: white;
 }
 
 .event-card .event-date {
-    color: #000;
+    color: #e69d0b;
 }
 
 .events-btn {
@@ -660,7 +663,7 @@ body {
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 0.05rem;
-    color: #000;
+    color: #e69d0b;
     opacity: 0.9;
 }
 
