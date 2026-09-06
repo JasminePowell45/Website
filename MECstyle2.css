@@ -123,10 +123,11 @@ body {
 }
 
 .dropdown-toggle::after {
+    content: "▾";
     color: #f0ead6;
-    margin-left: 4px;
-    font-size: 0.7rem;
-    left: -6px;
+    opacity: 0.5;
+    font-size: 0.65rem;
+    transition: opacity 0.2s ease;
 }
 
 .dropdown {
@@ -208,9 +209,16 @@ body {
     display:block;
 }
 
+.nav-item.has-dropdown:hover .dropdown-toggle::after {
+    opacity: 1;
+}
 
 .dropdown-toggle {
-    display: none;
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 0 0 4px;
 }
 
 /* Menu-toggle hamburger button (hidden on desktop) */
