@@ -100,7 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
             { img: "/images/emerging leaders day (1).jpeg", caption: "Emerging Leaders Day" },
             { img: "/images/Health and Wellness.jpeg", caption: "Health & Wellness Fair" },
             { img: "/images/BlackMacombForum.Final.png", caption: "Spoken Word and Q&A Session" },
-            { img: "/images/Black Business Expo 2025 (1).png", caption: "Vendor & Resource Expo" }
         ]
     };
 
