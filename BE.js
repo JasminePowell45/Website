@@ -52,22 +52,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // =========================================================
-    // EVENT HIGHLIGHTS - photos from the most recent celebration
+    // EVENT HIGHLIGHTS - real photos from the most recent Gala.
     // This is NOT a growing archive. Each year, once the next
-    // event happens, REPLACE the whole "photos" array below with
+    // Gala happens, REPLACE the whole "photos" array below with
     // that year's ~6 best photos (don't add to the old ones) and
-    // update "year". That's the entire yearly update for this
-    // section.
+    // update "year". That's the entire yearly update.
     // =========================================================
     const eventHighlights = {
         year: 2025,
         photos: [
-            { img: "/images/Gospel concert 2 (1).jpeg", caption: "Gospel Concert" },
-            { img: "/images/Chef Challenge.jpeg", caption: "Ultimate Chef Challenge" },
-            { img: "/images/MCBE Gala Flyer.jpeg", caption: "Gala" },
-            { img: "/images/HBCU Fair.jpeg", caption: "HBCU College Fair" },
-            { img: "/images/emerging leaders day (1).jpeg", caption: "Emerging Leaders Day" },
-            { img: "/images/Health and Wellness.jpeg", caption: "Health & Wellness Fair" }
+            { img: "/images/highlights/2025-gala-1.jpg", caption: "Board members at the Gala" },
+            { img: "/images/highlights/2025-gala-2.jpg", caption: "Welcoming remarks" },
+            { img: "/images/highlights/2025-gala-3.jpg", caption: "Rhonda M. Powell Visionary Leadership Award presentation" },
+            { img: "/images/highlights/2025-gala-4.jpg", caption: "Grand entrance" },
+            { img: "/images/highlights/2025-gala-5.jpg", caption: "Guests on the dance floor" },
+            { img: "/images/highlights/2025-gala-6.jpg", caption: "Legacy Award presentation" }
         ]
     };
 
@@ -77,6 +76,40 @@ document.addEventListener('DOMContentLoaded', () => {
     if (highlightsTitle) highlightsTitle.textContent = `${eventHighlights.year} Event Highlights`;
     if (highlightsRow) {
         highlightsRow.innerHTML = eventHighlights.photos.map(p => `
+            <div class="event">
+                <img src="${p.img}" alt="${p.caption}">
+                <div class="caption">
+                    <h3>${p.caption}</h3>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    // =========================================================
+    // PAST EVENTS - the different activities from that year's
+    // full week (Gospel Concert, Chef Challenge, HBCU Fair, etc).
+    // Same rule as above: REPLACE this whole list each year with
+    // that year's lineup, rather than adding to it.
+    // =========================================================
+    const pastEvents = {
+        year: 2025,
+        events: [
+            { img: "/images/Gospel concert 2 (1).jpeg", caption: "Gospel Concert" },
+            { img: "/images/Chef Challenge.jpeg", caption: "Ultimate Chef Challenge" },
+            { img: "/images/HBCU Fair.jpeg", caption: "HBCU College Fair" },
+            { img: "/images/emerging leaders day (1).jpeg", caption: "Emerging Leaders Day" },
+            { img: "/images/Health and Wellness.jpeg", caption: "Health & Wellness Fair" },
+            { img: "/images/BlackMacombForum.Final.png", caption: "Spoken Word and Q&A Session" },
+            { img: "/images/Black Business Expo 2025 (1).png", caption: "Vendor & Resource Expo" }
+        ]
+    };
+
+    const pastEventsTitle = document.getElementById('pastEventsTitle');
+    const pastEventsRow = document.getElementById('pastEventsRow');
+
+    if (pastEventsTitle) pastEventsTitle.textContent = `${pastEvents.year} Week of Activities`;
+    if (pastEventsRow) {
+        pastEventsRow.innerHTML = pastEvents.events.map(p => `
             <div class="event">
                 <img src="${p.img}" alt="${p.caption}">
                 <div class="caption">
