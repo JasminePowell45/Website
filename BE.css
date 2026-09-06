@@ -746,41 +746,149 @@ a {
     transform: scale(1.05);
 }
 
-@media (max-width: 768) {
+
+/*=============================
+    FOOTER
+==============================*/
+.site-footer {
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 50px 30px 0;
+}
+ 
+.footer-inner {
+    display: flex;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    flex-wrap: wrap;
+}
+ 
+.footer-brand {
+    flex: 1;
+    min-width: 200px;
+}
+ 
+.footer-logo {
+    width: 120px;
+    height: auto;
+    max-width: 120px;
+    margin-bottom: 12px;
+    display: block;
+}
+ 
+.footer-brand p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+}
+ 
+.footer-links,
+.footer-contact {
+    flex: 1;
+    min-width: 160px;
+}
+ 
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #e69d0b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+ 
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.footer-links ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+ 
+.footer-links ul li a:hover {
+    color: white;
+}
+ 
+.footer-contact p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.8;
+}
+ 
+.footer-contact a {
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+ 
+.footer-contact a:hover {
+    color: white;
+}
+ 
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+ 
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.35);
+}
+ 
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+ 
+@media (max-width: 768px) {
     .nav-list {
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
     .nav-item.has-dropdown,
-    .dropdowm {
+    .dropdown {
         width: 100%;
         text-align: center;
         margin: 5px 0;
     }
-    
     .logo {
         max-width: 80%;
         height: auto;
         margin: 0 auto 10px;
     }
-    .hero-container, .eventinfo, .overview, .ending {
+    .hero-container,
+    .eventinfo,
+    .overview,
+    .ending {
         text-align: center;
         padding: 10px;
     }
-
     .info,
     .voting {
         text-align: center;
         font-size: 90%;
     }
-
     .nominate-button,
     .voting-button {
         width: 80%;
         margin: 10px auto;
     }
-
     img, video {
         max-width: 100%;
         height: auto;
