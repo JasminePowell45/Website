@@ -17,15 +17,15 @@ html, body {
     overflow-x: hidden;
 }
 
-header{
-border-bottom: 1px solid  #e69d0b;
+header {
+    border-bottom: 1px solid #e69d0b;
 }
 
 .header-top {
     position: relative;
     background-color: white;
-    padding: 15px 0; /*space around logo */
-    text-align: center; /*centers logo*/
+    padding: 15px 0;
+    text-align: center;
 }
 
 /* ------------ Navigation Bar ------------ */
@@ -38,8 +38,7 @@ nav {
     z-index: 10;
 }
 
-/*navigation drop down */
-
+/* navigation dropdown */
 .nav-item.has-dropdown {
     position: relative;
 }
@@ -68,11 +67,11 @@ nav {
 }
 
 .nav-item.has-dropdown:hover .dropdown {
-    display:block;
+    display: block;
 }
 
 .nav-item.has-dropdown .dropdown li a:hover {
-    background:  #e69d0b;
+    background: #e69d0b;
     color: white;
 }
 
@@ -89,12 +88,13 @@ nav {
     justify-content: space-between;
 }
 
-.logo{
-    width: 175px; /* makes the logo smaller*/
+.logo {
+    width: 175px;
     height: auto;
     text-align: center;
     margin: 0 auto;
-    position: block;
+    position: relative;
+    display: block;
     max-width: 100%;
 }
 
@@ -102,34 +102,35 @@ nav {
 .nav-item > a {
     text-decoration: none;
     color: #f0ead6;
-    font-weight: 500;
     font-size: 1.1rem;
     transition: color 0.3s ease;
     padding: 8px 12px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .nav-item > a:hover {
     color: #0A5f8a;
 }
+
 /* arrow css */
 .dropdown-toggle {
     background: none;
     border: none;
-    color: f0ead6;
+    color: #f0ead6;
     font-size: 0.8rem;
     cursor: pointer;
     padding: 6px;
 }
 
 .dropdown-toggle::after {
-    content: "▼";
+    content: "▾";
     font-size: 0.7rem;
     color: #f0ead6;
     opacity: 0.6;
 }
 
-/* MENU-TOGGLE HAMBURGER BURTTON (HIDDEN ON DESKTOP*/
+/* MENU-TOGGLE HAMBURGER BUTTON (HIDDEN ON DESKTOP) */
 .menu-toggle {
     display: none;
     background: black;
@@ -143,7 +144,7 @@ nav {
     position: absolute;
 }
 
-/* MEDIA FOR PHONES/TABLETS*/
+/* MEDIA FOR PHONES/TABLETS */
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
@@ -176,36 +177,33 @@ nav {
         z-index: 1001;
         display: none;
     }
-    
     .header-nav.active {
         transform: translateX(0);
         display: block;
     }
-   .header-nav .nav-list {
-       display: flex;
-       flex-direction: column;
-       gap: 18px;
-       margin: 0;
-       padding: 0;
-       list-style: none;
-       align-items: center;
-       justify-content: center;
+    .header-nav .nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
     }
     .header-nav .nav-item {
         width: 160px;
         display: flex;
         justify-content: center;
     }
-    .header-nav .nav-item > a{
+    .header-nav .nav-item > a {
         width: 100%;
         display: block;
         text-align: center;
-
         white-space: normal;
         line-height: 1.2;
         font-size: 0.9rem;
     }
-    
     .header-nav .nav-list a {
         color: #e69d0b;
         text-decoration: none;
@@ -216,10 +214,9 @@ nav {
         white-space: normal;
         word-break: normal;
     }
-    .header-nav .navlist a:hover {
+    .header-nav .nav-list a:hover {
         text-decoration: underline;
     }
-    
 }
 
 /* VIDEO */
@@ -241,9 +238,9 @@ nav {
 }
 
 @media (max-width: 1024px) {
-    .hero-container; {
+    .hero-container {
         height: 60vh;
-        margin-bottom: 4vh
+        margin-bottom: 4vh;
     }
 }
 
@@ -254,16 +251,16 @@ nav {
     }
 }
 
-/* TITLE FOR GREETING*/
+/* TITLE FOR GREETING */
 .eventinfo {
-    position:relative;
+    position: relative;
+    padding: 10px;
     text-align: center;
     color: black;
-    padding: 10px;
     border-radius: 10px;
 }
 
- .eventinfo h1 {
+.eventinfo h1 {
     font-size: 3em;
     font-weight: bold;
     color: black;
@@ -271,9 +268,9 @@ nav {
     margin: 20px 0;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
- }
+}
 
- .eventinfo h1::after {
+.eventinfo h1::after {
     content: "";
     display: block;
     width: 200px;
@@ -282,26 +279,24 @@ nav {
     margin: 15px auto 0 auto;
     background: rgba(195, 137, 13, 0.862);
     border-radius: 2px;
- }
+}
 
 @media (max-width: 768px) {
     .eventinfo {
         padding-top: 24px;
     }
-
     .eventinfo h1 {
-        font-size: 2em;
         line-height: 1.15;
+        font-size: 2em;
     }
 }
 
-/*-----GREETINGS----*/
-
+/* GREETINGS */
 .overview {
     padding: 40px 20px;
 }
 
- .container {
+.container {
     width: 70%;
     max-width: 800px;
     margin: 0 auto;
@@ -310,8 +305,7 @@ nav {
     background-color: #000;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 8px;
- }
-
+}
 
 .begin h3 {
     text-align: center;
@@ -340,7 +334,55 @@ nav {
 }
 
 a {
-    color: rgb(205, 131, 65);  /*Links in gold to match the theme*/
+    color: rgb(205, 131, 65);
+}
+
+/* STATUS BANNER - always up to date via BE.js */
+.status-banner {
+    background-color: #e69d0b;
+    color: #000;
+    padding: 16px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.status-banner p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.status-banner .banner-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #e69d0b;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+
+.status-banner .banner-btn:hover {
+    background-color: #222;
+}
+
+@media (max-width: 600px) {
+    .status-banner {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.no-events {
+    color: white;
+    text-align: center;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -352,7 +394,7 @@ a {
 
 /*-----current events----*/
 .current-events {
-    background-color: rgba(58, 58, 58);
+    background-color: rgb(58, 58, 58);
     padding: 2rem 2rem;
     box-sizing: border-box;
 }
@@ -362,56 +404,22 @@ a {
     font-size: 2rem;
     margin-bottom: 2rem;
     color: white;
-} 
-
+}
 
 .flyers-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 2rem;
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 
-/*EVENT CARD*/
+/* EVENT CARD */
 .event-card {
     width: 250px;
     box-sizing: border-box;
     text-align: center;
     position: relative;
-}
-
-.flyer-link {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 350px;
-}
-
-
-/* FLYER IMAGE + HOVER*/
-.event-image {
-    width: 100% !important;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-
-/* HOVER OVERLAY */
-.flyer-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    inset: 0;
-    display: flex;
-    background: rgba(0, 0, 0, 0.6);
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transistion: opacity 0.3s ease;
 }
 
 .flyer-link {
@@ -430,7 +438,7 @@ a {
     border: 1px solid rgba(230, 157, 11, 0.4);
 }
 
-/* HOVER EFFECT*/
+/* HOVER OVERLAY */
 .flyer-overlay {
     position: absolute;
     inset: 0;
@@ -468,30 +476,28 @@ a {
     color: #e69d0b;
 }
 
-/* MEDIA */
 @media (hover: none) {
     .flyer-overlay {
         opacity: 1;
         background: rgba(0,0,0,0.5);
     }
 }
+
 @media (max-width: 600px) {
-    .event-card h3, 
-    .event-card .event-date, {
-       font-size: 0.95;
+    .event-card h3,
+    .event-card .event-date {
+        font-size: 0.95rem;
     }
 }
 
-
 /*---gallery of events----*/
-
 .event-gallery {
     width: 100%;
     max-width: 1400px;
     padding: 40px 20px;
     margin: 0 auto;
+    background-color: #000;
     box-sizing: border-box;
-    background-color:  #000;
 }
 
 .container-title {
@@ -529,10 +535,6 @@ a {
     max-width: 220px;
 }
 
-.row:first-child .event {
-    flex: 1 1 calc(25% - 7.5px);
-}
-
 .event img {
     width: 100%;
     height: 280px;
@@ -553,15 +555,13 @@ a {
     text-align: center;
 }
 
-
 @media (max-width: 768px) {
     .event-gallery {
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
-        padding: 20 12px;
+        padding: 20px 12px;
     }
-
     .row {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -586,9 +586,8 @@ a {
         margin-top: 8px;
     }
 }
-    
-/* List of Award Winners  */
 
+/* List of Award Winners */
 .award-winners {
     width: 100%;
     background-color: white;
@@ -618,7 +617,7 @@ a {
 .winner-card {
     background: #f7f7f7;
     border-radius: 12px;
-    padding; 24px 16px;
+    padding: 24px 16px;
 }
 
 .winner {
@@ -637,24 +636,23 @@ a {
 }
 
 .winner-card h3::after {
-        content: "";
-        display: block;
-        width: 90px;
-        height: 2px;
-        margin: 5px auto 0 auto;
-        background: rgba(195, 137, 13, 0.862);
-        border-radius: 2px;
-    }
+    content: "";
+    display: block;
+    width: 90px;
+    height: 2px;
+    margin: 5px auto 0 auto;
+    background: rgba(195, 137, 13, 0.862);
+    border-radius: 2px;
+}
 
-@media (max-width: 768) {
+@media (max-width: 768px) {
     .award-winners {
         width: 100%;
         max-width: 100%;
         padding: 40px 14px;
         box-sizing: border-box;
     }
-    
-   .winner-row {
+    .winner-row {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 14px;
         width: 100%;
@@ -670,7 +668,6 @@ a {
 }
 
 /* nomination button */
-
 .nominate-button {
     margin-top: 50px;
     text-align: center;
@@ -693,7 +690,6 @@ a {
 }
 
 /*--VOTING--*/
-
 .voting {
     background-color: #000;
     padding: 50px 20px;
@@ -725,7 +721,7 @@ a {
 }
 
 .voting-button {
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -745,7 +741,6 @@ a {
     transform: scale(1.05);
 }
 
-
 /*=============================
     FOOTER
 ==============================*/
@@ -754,7 +749,7 @@ a {
     color: rgba(255, 255, 255, 0.7);
     padding: 50px 30px 0;
 }
- 
+
 .footer-inner {
     display: flex;
     gap: 60px;
@@ -764,12 +759,12 @@ a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     flex-wrap: wrap;
 }
- 
+
 .footer-brand {
     flex: 1;
     min-width: 200px;
 }
- 
+
 .footer-logo {
     width: 120px;
     height: auto;
@@ -777,19 +772,19 @@ a {
     margin-bottom: 12px;
     display: block;
 }
- 
+
 .footer-brand p {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.5);
     line-height: 1.6;
 }
- 
+
 .footer-links,
 .footer-contact {
     flex: 1;
     min-width: 160px;
 }
- 
+
 .footer-links h4,
 .footer-contact h4 {
     font-size: 0.8rem;
@@ -799,7 +794,7 @@ a {
     letter-spacing: 1px;
     margin-bottom: 16px;
 }
- 
+
 .footer-links ul {
     list-style: none;
     padding: 0;
@@ -807,53 +802,53 @@ a {
     flex-direction: column;
     gap: 10px;
 }
- 
+
 .footer-links ul li a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.65);
     font-size: 0.9rem;
     transition: color 0.2s ease;
 }
- 
+
 .footer-links ul li a:hover {
     color: white;
 }
- 
+
 .footer-contact p {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.65);
     line-height: 1.8;
 }
- 
+
 .footer-contact a {
     color: rgba(255, 255, 255, 0.65);
     text-decoration: none;
     transition: color 0.2s ease;
 }
- 
+
 .footer-contact a:hover {
     color: white;
 }
- 
+
 .footer-bottom {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
     text-align: center;
 }
- 
+
 .footer-bottom p {
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.35);
 }
- 
+
 @media (max-width: 768px) {
     .footer-inner {
         flex-direction: column;
         gap: 30px;
     }
 }
- 
+
 @media (max-width: 768px) {
     .nav-list {
         flex-direction: column;
