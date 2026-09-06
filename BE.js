@@ -61,12 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const eventHighlights = {
         year: 2025,
         photos: [
-            { img: "/images/highlights/2025-gala-1.jpg", caption: "Board members at the Gala" },
-            { img: "/images/highlights/2025-gala-2.jpg", caption: "Welcoming remarks" },
-            { img: "/images/highlights/2025-gala-3.jpg", caption: "Rhonda M. Powell Visionary Leadership Award presentation" },
-            { img: "/images/highlights/2025-gala-4.jpg", caption: "Grand entrance" },
-            { img: "/images/highlights/2025-gala-5.jpg", caption: "Guests on the dance floor" },
-            { img: "/images/highlights/2025-gala-6.jpg", caption: "Legacy Award presentation" }
+            { img: "/images/MCBE2025GALA-RIADANMEDIA-224.jpg", caption: "Board members at the Gala" },
+            { img: "/images/MCBE2024RIADANMEDIA-66.jpg", caption: "Welcoming remarks" },
+            { img: "/images/MCBE2024RIADANMEDIA-211.jpg", caption: "Guest on the dance floor" },
+            { img: "/images/MCBE2024RIADANMEDIA-30.jpg", caption: "Community picture" },
+            { img: "/images/MCBE2024RIADANMEDIA-118.jpg", caption: "Legacy Award presentation" },
+            { img: "/images/MCBE2024RIADANMEDIA-207.jpg", caption: "Guests on the dance floor" }
         ]
     };
 
