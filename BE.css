@@ -321,7 +321,10 @@ nav {
 .description p {
     line-height: 1.6;
     color: white;
-    text-align: center;
+    text-align: left;
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ending p {
