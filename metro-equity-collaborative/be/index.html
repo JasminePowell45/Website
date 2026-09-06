@@ -10,8 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap" rel="stylesheet">
  </head> 
  <body>
- <header>
-    <header class="site-header">
+ <header class="site-header">
      <div class="header-top">
         <img class="logo" src="/images/MCBE new logo 2.PNG" alt="website logo">
          <button class="menu-toggle" aria-label="Open menu">
@@ -19,7 +18,6 @@
      </button>
      </div>
 
-     
     <nav class="header-nav">
         <ul class="nav-list">
             <li class="nav-item">
@@ -39,15 +37,22 @@
     <div class="border-line"></div>
 <section>
     <div class="hero-container">
-        <video id="herovideo" autoplay loop controls>
+        <video id="herovideo" autoplay muted loop controls>
             <source src="/images/MCBE RECAP extended mp4 (3).mp4" type="video/mp4">
         </video>
     </div>
 </section>
+
+<!--Status Banner - shows current nominate/voting phase, always up to date-->
+<section class="status-banner">
+    <p id="bannerText">Loading...</p>
+    <a href="#" id="bannerBtn" class="banner-btn"></a>
+</section>
+
 <section>
-        <div class="eventinfo">
-            <h1>Macomb Celebration of Black Excellence</h1>
-        </div> 
+    <div class="eventinfo">
+        <h1>Macomb Celebration of Black Excellence</h1>
+    </div>
 </section>
 <section class="overview">
     <div class="container">
@@ -83,170 +88,131 @@
     </div>
 </section>
 
-<!--Current Events-->
+<!--Upcoming Events - populated by BE.js, filtered to hide past dates automatically-->
  <section class="current-events">
-  <h2 class="section-title">Current Events</h2>
+  <h2 class="section-title">Upcoming Events</h2>
 
-  <div class="flyers-row">
-   <div class="event-card">
-    <a href="https://www.eventbrite.com/e/mcbe-state-of-black-macomb-forum-registration-1978444227944?aff=erelexpmlt" class="flyer-link">
-     <img src="/images/State of Black Macomb 2026 Flyer.jpg" class="event-image">
-     
-     <div class="flyer-overlay">
-      <span>Click to Registration</span></div>
-    </a>
-    <h3>State of Black Macomb Forum</h3>
-    <p class="event-date">Friday, February 13th 2026</p>
-   </div>
-
-   <div class="event-card">
-       <a href="https://www.zeffy.com/en-US/ticketing/2026-mcbe-black-business-and-health-expo" class="flyer-link">
-    <img src="/images/Black Business Expo Vendors 2026 (1).jpg" class="event-image"/>
-        
-    <div class="flyer-overlay">
-     <span>Click to Register</span></div>
-   </a>
-    <h3>Black Business & Health Expo</h3>
-    <p class="event-date">Saturday, February 21st 2026</p>
-   </div>
-   
-   <div class="event-card">
-    <a href="https://www.eventbrite.com/e/macomb-celebration-of-black-excellence-awards-dinner-and-gala-tickets-1976404929347" class="flyer-link">
-     <img src="/images/MCBE 2026 Gala Flyer.jpg" class="event-image">
-     
-    <div class="flyer-overlay">
-     <span>Click to Register</span></div>
-    </a>
-     
-    <h3>Gala</h3>
-    <p class="event-date">Saturday, February 28th 2026</p>
-   </div>
-  </div>
+  <ul class="flyers-row" id="eventsList">
+    <!-- JS fills this in from BE.js -->
+  </ul>
  </section>
-  
-<!--Photo Gallery-->
-<div class="event-gallery">
-    <h2 class="container-title"> Past Events</h2>
-    <div class="row">
-        <div class="event">
-                <img src="/images/Gospel concert 2 (1).jpeg" alt="gospel 1 concert">
-            <div class="caption">
-                <h3>Concert Gospel</h3>
-     </div>
-    </div>
-    <div class="event">
-        <img src="/images/Chef Challenge.jpeg" alt="ultimate chef challenge">
-        <div class="caption">
-            <h3>Ultimate Chef Challenge</h3>
-        </div>
-       </div>
-    <div class="event">
-        <img src="/images/MCBE Gala Flyer.jpeg" alt="gala">
-        <div class="caption">
-            <h3>Gala</h3>
-     </div>
-    </div>
-    <div class="event">
-        <img src="/images/HBCU Fair.jpeg" alt="HBCU collefe fair">
-        <div class="caption">
-            <h3>HBCU College Fair</h3>
-        </div>
-    </div>
-    </div>
-    <div class="row">
-    <div class="event">
-        <img src="/images/emerging leaders day (1).jpeg" alt="emerging leaders">
-        <div class="caption">
-            <h3>Emerging Leaders Day</h3>
-    </div>
-    </div>
-    <div class="event">
-        <img src="/images/Health and Wellness.jpeg" alt="health & wellness">
-        <div class="caption">
-            <h3>Health & Wellness Fair</h3>
-        </div>
-    </div>
-    <div class="event">
-        <img src="/images/BlackMacombForum.Final.png" alt="spoken word">
-        <div class="caption">
-        <h3>Spoken Word and Q&A Session </h3>
-    </div>
-    </div>
-    <div class="event">
-    <img src="/images/Black Business Expo 2025 (1).png" alt="vendor and resource expo">
-    <div class="caption">
-        <h3>Vendor & Resource Expo</h3>
-    </div>
-    </div>
-</div>
-</div>
 
-<!--List of Award Winners with Filters-->
+<!--List of Past Award Recipients-->
 <section class="award-winners">
-    <h2>Award Recipients</h2>
+    <h2>Past Award Recipients</h2>
 
     <div class="winner-row">
         <div class="winner-card">
-        <h3>Artistic Impact Award</h3>
-        <p class="winner">2024 Awardee: Micheal Pratt</p>
+            <h3>Artistic Impact Award</h3>
+            <p class="winner">2024 Awardee: Micheal Pratt</p>
         </div>
-    <div class="winner-card">
-        <h3>Athletic Leader Award</h3>
-        <p class="winner">2024 Awardee: Vernard Snowden</p>
+        <div class="winner-card">
+            <h3>Athletic Leader Award</h3>
+            <p class="winner">2024 Awardee: Vernard Snowden</p>
         </div>
-     <div class="winner-card">
+        <div class="winner-card">
             <h3>Business Impact Award</h3>
             <p class="winner">2024 Awardee: Randy Herring Jr.</p>
         </div>
-     <div class="winner-card">
+        <div class="winner-card">
             <h3>Legacy Award</h3>
             <p class="winner">2024 Awardee: Lee V. Newby, Jr</p>
             <p class="winner">2024 Awardee: Sarah Stovall</p>
         </div>
-    <div class="winner-card">
+        <div class="winner-card">
             <h3>Educational Impact Award</h3>
             <p class="winner">2024 Awardee: Darnell Blackburn</p>
         </div>
-    <div class="winner-card">
-        <h3>Rhonda M. Powell Visonary leadership Award</h3>
-        <p class="winner">Pastor Kevin W. Lancaster</p>
-    </div>
-     <div class="winner-card">
+        <div class="winner-card">
+            <h3>Rhonda M. Powell Visionary Leadership Award</h3>
+            <p class="winner">Pastor Kevin W. Lancaster</p>
+        </div>
+        <div class="winner-card">
             <h3>Community Advocate Award</h3>
             <p class="winner">2024 Awardee: The Seven's Committee</p>
         </div>
     </div>
-    <div class="nominate-button">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScbGZ5vXYH-H5pMxd8ezLdNIgeA_U6XT1HtzBwt0cinaIyKag/viewform?pli=1">Nominations Closed for 2026</a>
-    </div>
-    </section>
-    <section class="voting">
-        <div class="info">
-            <h3>TIME TO CELEBRATE BLACK EXCELLENCE</h3>
-            <h2>VOTING IS OFFICIALLY OPEN!</h2>
-            <p>DECEMBER 1-31st, YOU HAVE THE POWER TO DECIDE WHO WILL SHINE 
-               AS OUR 2026 AWARD WINNERS AT THE CELEBRATION OF BLACK EXCELLENCE GALA!</p>
-            <p>DO YOU KNOW ONE OF THESE INCREDIBLE NOMINEES? THIS IS YOUR CHANCE TO 
-                HONOR THEIR IMPACT, LEADERSHIP, AND LEGACY. EVERY VOTE BRINGS US CLOSER
-                TO RECOGNIZING THE TRAILBLAZERS WHO INSPIRE OUR COMMUNITY!
-            </p>
-        </div>
-    <div class="voting-button">
-            <a href="https://www.surveymonkey.com/r/Y7WVC9Q">CLICK HERE TO VOTE</a>
-    </div>
-    </section>
+</section>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <img src="/images/MCBE new logo 2.PNG" alt="website logo" class="footer-logo">
-  <class="footer-logo">
-        <p>Macomb Celebration of Black Excellence</p>
+<!--Photo Gallery-->
+<div class="event-gallery">
+    <h2 class="container-title">Past Events</h2>
+    <div class="row">
+        <div class="event">
+            <img src="/images/Gospel concert 2 (1).jpeg" alt="Gospel Concert">
+            <div class="caption">
+                <h3>Concert Gospel</h3>
+            </div>
+        </div>
+        <div class="event">
+            <img src="/images/Chef Challenge.jpeg" alt="Ultimate Chef Challenge">
+            <div class="caption">
+                <h3>Ultimate Chef Challenge</h3>
+            </div>
+        </div>
+        <div class="event">
+            <img src="/images/MCBE Gala Flyer.jpeg" alt="Gala">
+            <div class="caption">
+                <h3>Gala</h3>
+            </div>
+        </div>
+        <div class="event">
+            <img src="/images/HBCU Fair.jpeg" alt="HBCU College Fair">
+            <div class="caption">
+                <h3>HBCU College Fair</h3>
+            </div>
+        </div>
     </div>
-     <div class="footer-links">
-        <h4>Navigate</h4>
-        <ul>
-           <li><a href="/black-business-association/">Black Business Association</a></li>
+    <div class="row">
+        <div class="event">
+            <img src="/images/emerging leaders day (1).jpeg" alt="Emerging Leaders Day">
+            <div class="caption">
+                <h3>Emerging Leaders Day</h3>
+            </div>
+        </div>
+        <div class="event">
+            <img src="/images/Health and Wellness.jpeg" alt="Health and Wellness Fair">
+            <div class="caption">
+                <h3>Health & Wellness Fair</h3>
+            </div>
+        </div>
+        <div class="event">
+            <img src="/images/BlackMacombForum.Final.png" alt="Spoken Word and Q&A Session">
+            <div class="caption">
+                <h3>Spoken Word and Q&A Session</h3>
+            </div>
+        </div>
+        <div class="event">
+            <img src="/images/Black Business Expo 2025 (1).png" alt="Vendor and Resource Expo">
+            <div class="caption">
+                <h3>Vendor & Resource Expo</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Nominate / Vote - text and button swap automatically based on the current phase, see BE.js-->
+<section class="voting">
+    <div class="info">
+        <h3 id="infoEyebrow">Loading...</h3>
+        <h2 id="infoHeading"></h2>
+        <p id="infoBody"></p>
+    </div>
+    <div class="voting-button">
+        <a href="#" id="actionBtn"></a>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <img src="/images/MCBE new logo 2.PNG" alt="MCBE logo" class="footer-logo">
+            <p>Macomb Celebration of Black Excellence</p>
+        </div>
+        <div class="footer-links">
+            <h4>Navigate</h4>
+            <ul>
+                <li><a href="/black-business-association/">Black Business Association</a></li>
                 <li><a href="/metro-equity-collaborative/">Metro Equity Collaborative</a></li>
                 <li><a href="/metro-equity-collaborative/be/">Black Excellence</a></li>
                 <li><a href="/metro-equity-action-fund/">Metro Equity Action Fund</a></li>
@@ -260,8 +226,8 @@
     <div class="footer-bottom">
         <p>&copy; 2026 Macomb Celebration of Black Excellence. All rights reserved</p>
     </div>
-  </footer>
-   <script src="/BE.js"></script>
+</footer>
+
+<script src="/BE.js"></script>
  </body>
  </html>
- 
