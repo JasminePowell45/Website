@@ -30,7 +30,7 @@ border-bottom: 1px solid  #e69d0b;
 
 /* ------------ Navigation Bar ------------ */
 nav {
-    max-width: 1000vh;
+    max-width: 1000px;
     background-color: #000;
     border-bottom: 1px solid rgb(74, 74, 74);
     box-shadow: 0 2px 4px #e69d0b;
@@ -38,6 +38,7 @@ nav {
     position: relative;
     z-index: 10;
 }
+
 /*navigation drop down */
 
 .nav-item.has-dropdown {
@@ -92,18 +93,21 @@ nav {
 .logo{
     width: 175px; /* makes the logo smaller*/
     height: auto;
+    text-align: center;
+    margin: 0 auto;
+    position: block;
+    max-width: 100%;
 }
 
 /* Main nav links */
 .nav-item > a {
     text-decoration: none;
     color: #f0ead6;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.1rem;
     transition: color 0.3s ease;
     padding: 8px 12px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
 }
 
 .nav-item > a:hover {
@@ -114,35 +118,18 @@ nav {
     background: none;
     border: none;
     color: f0ead6;
-    left: -30px;
     font-size: 0.8rem;
     cursor: pointer;
     padding: 6px;
 }
 
-.nav-item.has-dropdowm {
-    display: flex;
-    align-items: center;
-}
-
 .dropdown-toggle::after {
     content: "▼";
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #f0ead6;
+    opacity: 0.6;
 }
 
-
-.logo {
-    text-align: center;
-    margin: 0 auto;
-    position: relative;
-    padding-top: 0;
-    display: block;
-    max-width: 100%;
-    top: -25%;
-    right: 0.5%;
-    transform: scale(0.9);
-}
 /* MENU-TOGGLE HAMBURGER BURTTON (HIDDEN ON DESKTOP*/
 .menu-toggle {
     display: none;
@@ -165,16 +152,13 @@ nav {
         right: 15px;
         top: 20%;
         transform: translateY(-40%);
-
         width: 40px;
         height: 40px;
-
         align-items: center;
         justify-content: center;
-
         color: #e69d0b;
         background: black;
-        border: 2px: #e69d0b;
+        border: 2px solid #e69d0b;
         padding: 0;
         cursor: pointer;
         z-index: 10001;
@@ -185,19 +169,13 @@ nav {
         position: absolute;
         top: 200px;
         right: 0;
-
         width: 190px;
         height: auto;
-
         background: #000;
-
         transform: translateX(100%);
         transition: transform 0.3s ease;
-
         z-index: 1001;
-        cursor: pointer;
         display: none;
-        
     }
     
     .header-nav.active {
@@ -241,7 +219,6 @@ nav {
     }
     .header-nav .navlist a:hover {
         text-decoration: underline;
-        
     }
     
 }
@@ -252,9 +229,8 @@ nav {
     width: 100vw;
     height: 80vh;
     overflow: hidden;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     background-color: black;
-    
 }
 
 .hero-container video {
@@ -267,8 +243,8 @@ nav {
 
 @media (max-width: 1024px) {
     .hero-container; {
-    height: 60vh;
-    margin-bottom: 4vh
+        height: 60vh;
+        margin-bottom: 4vh
     }
 }
 
@@ -282,81 +258,71 @@ nav {
 /* TITLE FOR GREETING*/
 .eventinfo {
     position:relative;
-    padding-top: 50px;
-    margin-top: -6vw;
     text-align: center;
     color: black;
     padding: 10px;
     border-radius: 10px;
 }
+
  .eventinfo h1 {
     font-size: 3em;
     font-weight: bold;
     color: black;
-    top: 40%;
     text-align: center;
     margin: 20px 0;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
-    transform: translateY(-90px);
  }
 
  .eventinfo h1::after {
     content: "";
     display: block;
-    width: 1000px;
+    width: 200px;
+    max-width: 60%;
     height: 4px;
-    margin: 5px auto 0 auto;
+    margin: 15px auto 0 auto;
     background: rgba(195, 137, 13, 0.862);
     border-radius: 2px;
-
-
  }
 
 @media (max-width: 768px) {
     .eventinfo {
         padding-top: 24px;
-        margin-top: 100px;
     }
 
     .eventinfo h1 {
-        margin-top: 0;
+        font-size: 2em;
         line-height: 1.15;
     }
-
-    .eventinfo h1::after {
-        margin-top: 10px;
-    }
 }
+
 /*-----GREETINGS----*/
+
+.overview {
+    padding: 40px 20px;
+}
+
  .container {
     width: 70%;
-    height: 80%;
-   /* display: flex;*/
+    max-width: 800px;
     margin: 0 auto;
-    margin-top: -10vw;
     align-items: center;
-    padding: 16px 20px;
-    transform: scale(0.9);
+    padding: 30px 30px;
     background-color: #000;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
  }
-.overview {
-    padding: 20px 20px;
-    display: inline-block;
-}
+
 
 .begin h3 {
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 10px;
     color: white;
-    top: 50px;
 }
 
 .overview .description {
     margin-bottom: 20px;
-    display: inline-block;
 }
 
 .description p {
@@ -370,50 +336,59 @@ nav {
     color: white;
     font-family: 'Style Script';
     font-weight: 800;
-    transform: translateY(-20%);
     font-size: 45px;
+    margin: 10px 0 0;
 }
 
 a {
     color: rgb(205, 131, 65);  /*Links in gold to match the theme*/
 }
 
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
 /*-----current events----*/
 .current-events {
-    background-color: rgba(195, 137, 13, 0.862);
-    padding: 2rem 2rem 2rem;
+    background-color: rgba(58, 58, 58);
+    padding: 2rem 2rem;
     box-sizing: border-box;
-    /*overflow: hidden;*/
 }
 
 .section-title {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
+    color: white;
 } 
 
 
 .flyers-row {
-    text-align: center;
-    font-size: 0;
-    margin-bottom: 4rem;
-    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
 }
-
-
-
 
 /*EVENT CARD*/
 .event-card {
-    display: inline-block;
-    vertical-align: top;
     width: 250px;
     box-sizing: border-box;
     text-align: center;
-    margin: 0 2rem;
-    font-size: initial;
     position: relative;
 }
+
+.flyer-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
 
 /* FLYER IMAGE + HOVER*/
 .event-image {
@@ -452,13 +427,27 @@ a {
     height: 350px;
     object-fit: cover;
     display: block;
+    border-radius: 8px;
+    border: 1px solid rgba(230, 157, 11, 0.4);
 }
 
-/* OVERLAY TEXT */
-
 /* HOVER EFFECT*/
+.flyer-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    background: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
 .flyer-link:hover .flyer-overlay {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .flyer-overlay span {
@@ -468,11 +457,17 @@ a {
     font-weight: 600;
     display: inline-block;
     text-align: center;
+    background: rgba(0,0,0,0.5);
 }
 
-/* EVENT TEXT*/
+.event-card h3 {
+    color: white;
+    margin-top: 12px;
+}
 
-
+.event-card .event-date {
+    color: #e69d0b;
+}
 
 /* MEDIA */
 @media (hover: none) {
@@ -492,12 +487,12 @@ a {
 /*---gallery of events----*/
 
 .event-gallery {
-    width:100%;
-    max-width: 2300px;
-    padding: 10px 0;
+    width: 100%;
+    max-width: 1400px;
+    padding: 40px 20px;
     margin: 0 auto;
-    align-items: center;
-    background-color:  #000 ;
+    box-sizing: border-box;
+    background-color:  #000;
 }
 
 .container-title {
@@ -521,6 +516,7 @@ a {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 20px;
     justify-content: center;
@@ -530,16 +526,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-shrink: 0;
-    width: 220px;
+    flex: 1 1 220px;
+    max-width: 220px;
 }
 
 .row:first-child .event {
     flex: 1 1 calc(25% - 7.5px);
-}
-
-.row:last-child .events {
-    flex: 1 1 calc(33.33% - 6.66px);
 }
 
 .event img {
@@ -548,6 +540,11 @@ a {
     object-fit: contain;
     border-radius: 8px;
     margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.event img:hover {
+    transform: scale(1.05);
 }
 
 .caption h3 {
@@ -558,17 +555,12 @@ a {
 }
 
 
-.event img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
 @media (max-width: 768px) {
     .event-gallery {
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
-        padding: 0 12px;
+        padding: 20 12px;
     }
 
     .row {
@@ -596,13 +588,14 @@ a {
     }
 }
     
-/* List of Award Winners with Filters */
+/* List of Award Winners  */
 
 .award-winners {
-    width:100%;
+    width: 100%;
     background-color: white;
     padding: 60px 20px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .award-winners h2 {
@@ -616,22 +609,18 @@ a {
 
 .winner-row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
     gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-
-.winner-card:nth-child(1) { grid-column: 1;}
-.winner-card:nth-child(2) { grid-column: 3;}
-
-
-.winner-card:nth-child(3) { grid-column: 1;}
-.winner-card:nth-child(4) { grid-column: 2;}
-.winner-card:nth-child(5) { grid-column: 3;}
-
-.winner-card:nth-child(6) {grid-column: 1;}
-.winner-card:nth-child(7) {grid-column: 3;}
+.winner-card {
+    background: #f7f7f7;
+    border-radius: 12px;
+    padding; 24px 16px;
+}
 
 .winner {
     color: #000;
@@ -662,31 +651,25 @@ a {
     .award-winners {
         width: 100%;
         max-width: 100%;
-        padding: 0 14px;
+        padding: 40px 14px;
         box-sizing: border-box;
     }
-   .award-winners .winner-row {
-        display: grid !important;
+    
+   .winner-row {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 14px;
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
     }
-    .award-winners .winner-row .winner-card {
-        max-width: 100%;
-        min-width: 0;
-        justify-self: stretch;
-        width: 100%;
-        box-sizing: border-box;
-        grid-column: auto !important;
-    }
-   .award-winners .winner-row .winner-card:nth-child(7) {
-        grid-column: 1 / -1 !important;
-        justify-self: center;
-        width: min(320px, 100%);
+}
+
+@media (max-width: 480px) {
+    .winner-row {
+        grid-template-columns: 1fr;
     }
 }
+
 /* nomination button */
 
 .nominate-button {
@@ -702,49 +685,49 @@ a {
     border-radius: 50px;
     font-weight: bold;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .nominate-button a:hover {
     background-color: #e0b800;
-    transform: scale(2);
+    transform: scale(1.05);
 }
+
 /*--VOTING--*/
 
 .voting {
     background-color: #000;
-    padding: 20px;
+    padding: 50px 20px;
 }
 
 .info {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .info h3 {
     font-size: 1rem;
     font-weight: 400;
     color: rgba(195, 137, 13, 0.862);
-    text-align: center;
 }
 
 .info h2 {
     font-size: 2rem;
     font-weight: 800;
     color: rgba(195, 137, 13, 0.862);
-    text-align: center;
 }
 
 .info p {
     font-size: 0.9rem;
     font-weight: 400;
     color: rgba(195, 137, 13, 0.862);
-    text-align: center;
 }
 
 .voting-button {
     margin-top: 50px;
-   text-align: center;
+    text-align: center;
 }
 
 .voting-button a {
@@ -755,29 +738,27 @@ a {
     border-radius: 50px;
     font-weight: bold;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .voting-button a:hover {
     background-color: #e0b800;
-    transform: scale(2);
+    transform: scale(1.05);
 }
 
 @media (max-width: 768) {
-    .nav {
-        flex-direction: column;
-        align-items: center;
-    }
     .nav-list {
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
-    .nav-item.has-dropdown, .dropdown {
+    .nav-item.has-dropdown,
+    .dropdowm {
         width: 100%;
         text-align: center;
         margin: 5px 0;
     }
+    
     .logo {
         max-width: 80%;
         height: auto;
@@ -787,34 +768,23 @@ a {
         text-align: center;
         padding: 10px;
     }
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .event-gallery, .row, .winner-row, .award-winners {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    .event, .winner-card {
-        width: 90%;
-        margin: 5px auto;
-    }
-    .info, .voting {
-        text-align: center
+
+    .info,
+    .voting {
+        text-align: center;
         font-size: 90%;
-        }
-    .nominate-button, .voting-button {
-            width: 80%;
-            margin: 10px auto;
-            display: block;
-        }
+    }
+
+    .nominate-button,
+    .voting-button {
+        width: 80%;
+        margin: 10px auto;
+    }
+
     img, video {
         max-width: 100%;
         height: auto;
         display: block;
         margin: 0 auto;
     }
-    }
-            
+}
